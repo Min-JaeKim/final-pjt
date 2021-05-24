@@ -126,7 +126,7 @@ def review_update_delete(request):
 #             movieId = tmp2.get('id')
 #             if str(movieId) in dic.keys():
 #                 continue
-#             dic['movieId'] = 1
+#             dic[f'{movieId}'] = 1
 #             data = {
 #                 'movie_id': movieId,
 #                 'title': tmp2.get('title'),
@@ -151,14 +151,23 @@ def review_update_delete(request):
 
 # movielist db 추가욤
 # def tmp(request):
+#     dic = {}
 #     for i in range(1, 11):
 #         url = 'https://api.themoviedb.org/3/list/' + str(i) + '?api_key=f361f3c50ed76f4dd96355b1957b3f29&language=ko-kr'
 #         response = requests.get(url)
 #         tmp = response.json()
 #         for data in tmp.get('items'):
+#             movieId = data.get('id')
+#             print(movieId)
+#             if str(movieId) in dic.keys():
+#                 continue
+#             dic[f'{movieId}'] = 1
+#             list_id = int(tmp.get('id'))
+#             if list_id > 5:
+#                 list_id -= 1
 #             data = {
-#             'list_id': tmp.get('id'),
-#             'movie_id': data['id'],
+#             'list_id': list_id,
+#             'movie_id': movieId,
 #             'description': tmp.get('description'),
 #             }
 #             serializer = MovieListSerializer(data=data)
