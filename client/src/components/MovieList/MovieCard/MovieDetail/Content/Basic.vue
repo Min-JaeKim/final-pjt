@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="d-inline">{{ movie.overview }}</p>
+    <p>{{ movie.overview }}</p>
     <button @click="likeMovie" v-if="liked">좋아요 취소</button>
     <button @click="likeMovie" v-else>좋아요</button>
   </div>

@@ -1,19 +1,17 @@
 <template>
   <div>
     <h3>{{ movieList[0].description }}</h3>
+    
     <MovieCard 
-      v-for="(movieId, idx) in movieList"
+      v-for="(movie, idx) in movieList"
       :key="idx"
-      :movieId="movieId"
-      @is-modal="isModal"
+      :movieId="movie.movie_id"
     />
-    <MovieDetail v-if="isModalViewed" @close-modal="isModalViewed = false"/>
   </div>
 </template>
 
 <script>
-import MovieCard from '@/components/MovieList/MovieCard'
-import MovieDetail from "@/components/MovieList/MovieDetail"
+import MovieCard from '@/components/MovieList/MovieCard/'
 
 export default {
   name: 'MovieList',
@@ -24,17 +22,6 @@ export default {
   },
   components: {
     MovieCard,
-    MovieDetail,
-  },
-  data: function () {
-    return {
-      isModalViewed: false,
-    }
-  },
-  methods: {
-    isModal: function () {
-      this.isModalViewed = !this.isModalViewed
-    }
   },
 }
 </script>

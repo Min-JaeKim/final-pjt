@@ -6,7 +6,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-link :to="{ name: 'Home' }" class="px-2 text-decoration-none">Home</b-link>
-          <b-link :to="{ name: 'Random' }" class="px-2 text-decoration-none">Random</b-link>
+          <b-link :to="{ name: 'Recom' }" class="px-2 text-decoration-none">추천작</b-link>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
