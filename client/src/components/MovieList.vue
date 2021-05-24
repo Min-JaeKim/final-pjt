@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import MovieCard from '@/components/MovieCard'
-import MovieDetail from "@/components/MovieDetail"
+import MovieCard from '@/components/MovieList/MovieCard'
+import MovieDetail from "@/components/MovieList/MovieDetail"
 
 export default {
   name: 'MovieList',

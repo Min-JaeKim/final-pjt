@@ -9,23 +9,15 @@
 import axios from 'axios'
 export default {
   name: 'Detail',
+  props: {
+    movieId: {
+      type: String
+    }
+  },
   data: function() {
     return {
       reviewContent: null,
     }
-  },
-  created: function () {
-    console.log(this.movieId)
-    axios ({
-      method: 'get',
-      url: `http://localhost:8000/movies/${this.movieId}/review_list/`,
-    })
-      .then(res => {
-        console.log(res)
-      })
-      .catch(err => {
-        console.log(err)
-      })
   },
   methods: {
     createReview: function () {
@@ -46,11 +38,21 @@ export default {
         })
     }
   },
-  computed: {
-    movieId: function () {
-      return this.$store.state.movieId
-    }
-  }
+  created: function () {
+    console.log(this.movie)
+    console.log(this.movie)
+    console.log(this.movie)
+    axios ({
+      method: 'get',
+      url: `http://localhost:8000/movies/${this.movieId}/review_list/`,
+    })
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  },
 }
 </script>
 

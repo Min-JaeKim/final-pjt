@@ -1219,7 +1219,7 @@
         "trailer": null,
         "backdrop_path": "/8eRscFbRYl681zDfkjv1jjW1KAA.jpg",
         "poster_path": "/2mOfj4saHxkpdMapd3pUakuewnp.jpg",
-        "vote_average": 5.6,
+        "vote_average": 5.7,
         "like_users": []
     }
 },
@@ -1610,7 +1610,7 @@
         "trailer": "600ec61822e480003e063aac",
         "backdrop_path": "/viBWzktrBmhzRw4ehmUIrrN4C0z.jpg",
         "poster_path": "/mrAOGwsZXAqANvniyefsGtnE2UP.jpg",
-        "vote_average": 7.0,
+        "vote_average": 7.1,
         "like_users": []
     }
 },
@@ -1686,176 +1686,6 @@
     "model": "movies.movie",
     "pk": 100,
     "fields": {
-        "movie_id": 1726,
-        "title": "아이언맨",
-        "genre": "28,878,12,",
-        "release_date": "2008-04-30",
-        "overview": "천재적인 두뇌와 재능으로 세계 최강의 무기업체를 이끄는 CEO이자, 타고난 매력으로 셀러브리티 못지않은 화려한 삶을 살아가던 억만장자 토니 스타크. 아프가니스탄에서 자신이 개발한 신무기 발표를 성공리에 마치고 돌아가던 그는 게릴라군의 갑작스런 공격에 의해 가슴에 치명적인 부상을 입고 게릴라군에게 납치된다. 가까스로 목숨을 건진 그에게 게릴라군은 자신들을 위한 강력한 무기를 개발하라며 그를 위협한다. 그러나 그는 게릴라군을 위한 무기 대신, 탈출을 위한 무기가 장착된 철갑수트를 몰래 만드는 데 성공하고, 그의 첫 수트인 Mark 1를 입고 탈출에 성공한다.",
-        "tagline": "이제 업그레이드는 끝났다",
-        "trailer": "57d2771692514175a10040fd",
-        "backdrop_path": "/vbY95t58MDArtyUXUIb8Fx1dCry.jpg",
-        "poster_path": "/318YNPBDdt4VU1nsJDdImGc8Gek.jpg",
-        "vote_average": 7.6,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 101,
-    "fields": {
-        "movie_id": 1724,
-        "title": "인크레더블 헐크",
-        "genre": "878,28,12,",
-        "release_date": "2008-06-12",
-        "overview": "실험 중 감마선에 노출된 이후 분노를 통제할 수 없는 상태가 되면 괴력을 지닌 녹색 괴물 헐크로 변하게 되는 브루스 배너. 필사적으로 치료제 개발에 매달리지만, 그의 능력을 이용하려는 정부와 군대의 끈질긴 추격을 받고 쫓기게 된다. 한편 헐크의 거대한 힘의 비밀을 파헤치던 이들은 헐크보다 더 파괴적인 어보미네이션을 만드는데 성공, 도시 전체를 집어삼키려 한다. 이에 브루스 배너는 정상적인 인생을 되찾으려던 계획을 버리고, 어보미네이션과 군대, 그리고 자기 자신과의 마지막 대결을 준비하는데...",
-        "tagline": "새로운 영웅이 분노에서 깨어난다",
-        "trailer": null,
-        "backdrop_path": "/xfBnQ4mgf1jYZsscJGJjr6ce0Ar.jpg",
-        "poster_path": "/7vgnJ0xzhyl8eQuDk4BHjR78nne.jpg",
-        "vote_average": 6.2,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 102,
-    "fields": {
-        "movie_id": 10138,
-        "title": "아이언맨 2",
-        "genre": "12,28,878,",
-        "release_date": "2010-04-28",
-        "overview": "세계 최강의 무기업체를 이끄는 CEO이자, 타고난 매력으로 화려한 삶을 살아가던 토니 스타크. 기자회견을 통해 자신이 아이언맨이라고 정체를 밝힌 이후, 정부로부터 아이언맨 수트를 국가에 귀속시키라는 압박을 받지만 이를 거부한다. 스타크 인더스트리의 운영권까지 수석 비서였던 페퍼 포츠에게 일임하고 히어로로서의 인기를 만끽하며 지내던 토니 스타크. 하지만 그 시각, 아이언맨의 수트 기술을 스타크 가문에 빼앗긴 후 쓸쓸히 돌아가신 아버지의 복수를 다짐해 온 위플래시는 수트의 원천 기술 개발에 성공, 치명적인 무기를 들고 직접 토니 스타크를 찾아 나선다.",
-        "tagline": "업그레이드는 끝나지 않았다!",
-        "trailer": "592a43dac3a36877bc05e5ab",
-        "backdrop_path": "/hCVQPB77eXBGh9abVdrWtKpKgkN.jpg",
-        "poster_path": "/7rUFYRfYV6c4yXiKBvKWOCRjimc.jpg",
-        "vote_average": 6.8,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 103,
-    "fields": {
-        "movie_id": 10195,
-        "title": "토르: 천둥의 신",
-        "genre": "12,14,28,",
-        "release_date": "2011-04-21",
-        "overview": "파괴를 일삼는 요툰하임을 제압한 왕 오딘의 통치로 평화로운 나날을 보내고 있는 신의 세계 아스가르드. 오딘의 아들인 토르의 왕위 계승식이 있던 날, 요툰하임의 지배자인 라우페이는 평화 협정을 위반하고 아스가르드를 침입한다. 이 사건으로 왕위에 오르지 못한 토르는 분노와 모욕감에 요툰하임을 공격하지만 막강한 군대에 포위되어 위기에 몰리게 되고, 오딘은 토르의 오만하고 경솔한 행동에 분노해 토르의 신으로서의 능력을 박탈한 채 인간 세계 미스가르드로 추방한다. 한편 천체의 이상현상을 연구하던 과학자 제인 일행은 거대한 섬광의 흔적을 쫓던 중, 그 현장 한가운데서 지구에 떨어진 토르와 맞닥뜨린다.",
-        "tagline": "신으로 태어나 슈퍼히어로가 되다",
-        "trailer": "57d42a73c3a3685577005339",
-        "backdrop_path": "/3SDoquTjagne0jWzdxEu31KFLmw.jpg",
-        "poster_path": "/f99ngOw3HByxzT85EgUdd7MF8c4.jpg",
-        "vote_average": 6.8,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 104,
-    "fields": {
-        "movie_id": 1771,
-        "title": "캡틴 아메리카: 퍼스트 어벤져",
-        "genre": "28,12,878,",
-        "release_date": "2011-07-22",
-        "overview": "진주만 공습을 겪은 미국은 선전포고를 하고 제2차 세계대전에 발을 들인다. 스티브 로저스는 왜소하고 마른 체격으로 인해 입대마저 번번히 거부당하지만, 포기를 모르는 근성과 강한 희생 정신을 인정받아 최고의 전사를 양성하는 슈퍼 솔져 프로젝트에 스카우트된다. 비밀리에 진행된 실험을 통해 가장 완벽한 육체와 인간의 한계를 초월한 신체 능력을 얻게 된 스티브는 모두에게 캡틴으로 불리며 영웅으로 새롭게 태어난다. 하지만 거대한 히드라 조직을 앞세운 적의 공격은 한층 막강해지고, 그 핵심에 선 레드 스컬은 인류를 위협하는 최후의 전투를 준비하는데...",
-        "tagline": "포기를 모르는 자, 최초의 슈퍼히어로로 깨어나다",
-        "trailer": "57d261afc3a3685bb8000daa",
-        "backdrop_path": "/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg",
-        "poster_path": "/7UGGhpu1DWwVdvf1Bop73wfoYy7.jpg",
-        "vote_average": 7.0,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 105,
-    "fields": {
-        "movie_id": 68721,
-        "title": "아이언맨 3",
-        "genre": "28,12,878,",
-        "release_date": "2013-04-18",
-        "overview": "어벤저스의 일원으로 활약한 뉴욕 사건 이후, 트라우마로 인해 영웅으로서의 삶에 회의를 느끼는 토니 스타크. 그가 혼란을 겪는 사이 최악의 테러리스트 만다린을 내세운 익스트리미스 집단 AIM이 스타크 저택에 공격을 퍼붓는다. 이 공격으로 그에게 남은 건 망가진 수트 한 벌 뿐. 모든 것을 잃어버린 그는 다시 테러의 위험으로부터 세계와 사랑하는 여인을 지켜내야 하는 동시에 머릿속을 떠나지 않던 한가지 물음의 해답도 찾아야만 한다. 과연 그가 아이언맨인가? 수트가 아이언맨인가?",
-        "tagline": "21세기 가장 매력적인 히어로의 귀환",
-        "trailer": "5c88f362c3a36864550b2a22",
-        "backdrop_path": "/tKa1gmGKAUVYnflYcadipeL3d9h.jpg",
-        "poster_path": "/pGMfidaVkjMVHXNIl7yippnipFT.jpg",
-        "vote_average": 6.9,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 106,
-    "fields": {
-        "movie_id": 76338,
-        "title": "토르: 다크 월드",
-        "genre": "28,12,14,",
-        "release_date": "2013-10-29",
-        "overview": "어벤져스의 뉴욕 사건 후, 다시 신들의 고향인 아스가르드 왕국으로 돌아간 토르와 로키. 지구를 위협한 로키는 지하 감옥에 갇히고, 토르는 아버지 오딘과 함께 우주의 질서를 재정립하기 위해 나선다. 1년 후, 지구에 혼자 남은 제인은 우연히 태초부터 존재해왔던 어둠의 종족 다크 엘프의 무기 에테르를 얻게 된다. 이 사실을 안 다크엘프의 리더 말레키스는 에테르를 되찾기 위해 제인과 아스가르드를 공격하고, 토르는 사랑하는 여인 제인과 아스가르드 왕국을 지키기 위해 로키에게 위험한 동맹을 제안하게 된다.",
-        "tagline": "태초의 어둠에 맞서기 위한 위험한 동맹이 시작된다!",
-        "trailer": "5c88f38ac3a36864650b351f",
-        "backdrop_path": "/uhYoytlNaq46dG81wLmHqaSuzWu.jpg",
-        "poster_path": "/aKnEwByCjXHpRoyOlSwYfmr9d5D.jpg",
-        "vote_average": 6.6,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 107,
-    "fields": {
-        "movie_id": 284053,
-        "title": "토르: 라그나로크",
-        "genre": "28,12,35,14,878,",
-        "release_date": "2017-10-25",
-        "overview": "은하계를 탐험하던 토르는 오딘의 오랜 숙적 수르트와의 대결에서 승리하는데, 수르트는 라그나로크가 이미 시작됐고, 막을 수 없을 것이라는 의미심장한 말을 남긴다. 한편 오딘의 힘이 약해지며 그가 봉인했던 죽음의 여신 헬라가 나타난다. 오딘의 첫째딸인 그녀는 두 동생, 토르와 로키를 가볍게 제압하고 아스가르드를 정복한다. 헬라와의 전쟁에서 묠니르를 잃고 사카아르라는 미지의 행성에 불시착한 토르는 아스가르드 행성으로 돌아가기 위해 고군분투한다. 행성의 통치자 그랜드 마스터는 행성 최고의 투사 챔피언과 싸워 이기면 행성을 떠나게 해주겠다고 토르에게 제안한다.",
-        "tagline": "피할 수 없는 세상의 멸망, 라그나로크를 막아라",
-        "trailer": "5c3d918c0e0a2654c18eb41b",
-        "backdrop_path": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
-        "poster_path": "/jwswXltzpGaKZCtz1CiDjXHQYAs.jpg",
-        "vote_average": 7.6,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 108,
-    "fields": {
-        "movie_id": 100402,
-        "title": "캡틴 아메리카: 윈터 솔져",
-        "genre": "28,12,878,",
-        "release_date": "2014-03-20",
-        "overview": "스티브 로저스는 외계의 뉴욕 침공 사건이 있은 뒤 워싱턴에서 쉴드 요원으로 살아가고 있다. 납치된 쉴드의 함선을 구출하는 작전을 펼치던 중 스티브는 닉 퓨리 국장과 블랙 위도우가 쉴드의 정보를 무단으로 수집하고 있다는 것을 알게 된다. 그리고 얼마 뒤 닉 퓨리는 윈터 솔져의 공격으로 눈을 감는다. 블랙 위도우와 함께 닉 퓨리가 남긴 USB를 분석하며 진실을 추적하던 스티브는 적이 쉴드 내부에 존재한다는 사실을 알게 된다. 설상가상 윈터 솔져가 캡틴 아메리카의 단짝 친구 버키라는 사실이 드러나는데...",
-        "tagline": "쉴드가 뚫렸다! 어벤져스를 향한 최악의 위기!",
-        "trailer": "5c4e5a84c3a3684793929a69",
-        "backdrop_path": "/yHB0eNR8rvCpn0VdghEwBsXAC0N.jpg",
-        "poster_path": "/zcSTD8KeGeGDwlrZTq23RN4B6sP.jpg",
-        "vote_average": 7.7,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 109,
-    "fields": {
-        "movie_id": 271110,
-        "title": "캡틴 아메리카: 시빌 워",
-        "genre": "12,28,878,",
-        "release_date": "2016-04-27",
-        "overview": "어벤져스가 벌인 전투로 많은 사람들이 불의의 사고를 당하는 등 부수적인 피해가 일어나자 정부는 슈퍼히어로 등록제를 추진하려 한다. 어벤져스의 독자적인 판단에 맡기기보다 직접 관리, 감독하겠다는 게 정부의 속내. 아이언맨은 정부의 방침을 따라야 한다는 입장인 반면, 캡틴 아메리카는 정부의 감시 없이 자유롭게 지구를 지켜야 한다고 주장한다. 어벤져스 내부는 캡틴 아메리카(윈터 솔져, 팔콘, 호크아이, 스칼렛 위치, 앤트맨)와 아이언맨(블랙위도우, 워머신, 블랙 팬서, 비전, 스파이더맨) 두 입장으로 나뉘어 대립하게 되는데...",
-        "tagline": "분열은 시작되었다!",
-        "trailer": "59294ad39251413b4504ab53",
-        "backdrop_path": "/kvRT3GwcnqGHzPjXIVrVPhUix7Z.jpg",
-        "poster_path": "/vaMRzME3Dt73robEjOtDw4SPJGA.jpg",
-        "vote_average": 7.4,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 110,
-    "fields": {
         "movie_id": 37165,
         "title": "트루먼 쇼",
         "genre": "35,18,",
@@ -1871,7 +1701,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 111,
+    "pk": 101,
     "fields": {
         "movie_id": 587,
         "title": "빅 피쉬",
@@ -1888,7 +1718,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 112,
+    "pk": 102,
     "fields": {
         "movie_id": 140,
         "title": "나쁜 교육",
@@ -1905,7 +1735,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 113,
+    "pk": 103,
     "fields": {
         "movie_id": 1443,
         "title": "처녀 자살 소동",
@@ -1922,7 +1752,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 114,
+    "pk": 104,
     "fields": {
         "movie_id": 153,
         "title": "사랑도 통역이 되나요?",
@@ -1931,7 +1761,7 @@
         "overview": "일상이 무료하고 외로운 밥 해리스(빌 머레이)와 샬롯(스칼렛 요한슨)은 도쿄로 여행온 미국인이다. 영화배우인 밥은 위스키 광고 촬영차 일본을 방문했지만 일본의 낯선 문화와 의사소통의 어려움으로 소외감을 느낀다. 갓 결혼한 샬롯은 사진작가인 남편을 따라 일본에 왔지만, 외로움과 불확실한 앞날에 대해 번민한다.  같은 호텔에 머무르고 있던 밥과 샬롯은 호텔바에서 우연히 마주친다. 두 사람은 서로의 모습 속에서 공통점을 발견하고 서로에게 이끌리게 된다. 이 둘은 도쿄 시내를 함께 구경하고, 얘기를 나누면서 급속도로 가까워지는데...",
         "tagline": "지구의 반 바퀴를 돌아 만난 7일간의 러브 스토리",
         "trailer": null,
-        "backdrop_path": "/6BVW7Tk0HvSGZqJ0NCnd2kLCJO3.jpg",
+        "backdrop_path": "/fEolr0bwBR7m0sHSJC8u8grnhBv.jpg",
         "poster_path": "/rGyDyUyepFIdFQLnzBelp3vsSaB.jpg",
         "vote_average": 7.4,
         "like_users": []
@@ -1939,7 +1769,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 115,
+    "pk": 105,
     "fields": {
         "movie_id": 1887,
         "title": "마리 앙투아네트",
@@ -1956,7 +1786,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 116,
+    "pk": 106,
     "fields": {
         "movie_id": 550,
         "title": "파이트 클럽",
@@ -1973,7 +1803,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 117,
+    "pk": 107,
     "fields": {
         "movie_id": 38,
         "title": "이터널 선샤인",
@@ -1990,7 +1820,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 118,
+    "pk": 108,
     "fields": {
         "movie_id": 19913,
         "title": "500일의 썸머",
@@ -2007,7 +1837,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 119,
+    "pk": 109,
     "fields": {
         "movie_id": 50646,
         "title": "크레이지 스투피드 러브",
@@ -2024,7 +1854,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 120,
+    "pk": 110,
     "fields": {
         "movie_id": 37735,
         "title": "이지 A",
@@ -2041,7 +1871,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 121,
+    "pk": 111,
     "fields": {
         "movie_id": 40850,
         "title": "Cherrybomb",
@@ -2058,24 +1888,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 122,
-    "fields": {
-        "movie_id": 27205,
-        "title": "인셉션",
-        "genre": "28,878,12,",
-        "release_date": "2010-07-15",
-        "overview": "타인의 꿈과 접속해 생각을 빼낼 수 있는 근미래, 돔 코브는 꿈의 보안 프로그래머이자 동시에 침입자다. 그는 일본인 사업가 사이토의 제안에 따라 거대 합병 기업의 총수가 될 피셔의 꿈을 설계하여 기업 합병을 막으려 든다. 그 일을 성사시키면 코브는 사이토의 도움으로 아내의 살해범으로 몰린 자신의 누명을 뒤로 하고 사랑스런 자녀들이 있는 집으로 돌아갈 수 있다. 마침내 코브 일행은 꿈 안의 꿈 안의 또 꿈이라는 경로를 거치며 피셔의 꿈과 무의식 깊숙한 곳을 설계하고 침투한다.",
-        "tagline": "생각을 훔치는 거대한 전쟁",
-        "trailer": "600cefdf0b5fd6003c5c6934",
-        "backdrop_path": "/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
-        "poster_path": "/jSm8mzp7sucgL8NwINIoAmx4dS5.jpg",
-        "vote_average": 8.3,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 123,
+    "pk": 112,
     "fields": {
         "movie_id": 1018,
         "title": "멀홀랜드 드라이브",
@@ -2092,7 +1905,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 124,
+    "pk": 113,
     "fields": {
         "movie_id": 10494,
         "title": "퍼펙트 블루",
@@ -2109,7 +1922,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 125,
+    "pk": 114,
     "fields": {
         "movie_id": 4977,
         "title": "파프리카",
@@ -2126,7 +1939,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 126,
+    "pk": 115,
     "fields": {
         "movie_id": 79707,
         "title": "별을 쫓는 아이: 아가르타의 전설",
@@ -2143,7 +1956,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 127,
+    "pk": 116,
     "fields": {
         "movie_id": 5915,
         "title": "인투 더 와일드",
@@ -2160,7 +1973,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 128,
+    "pk": 117,
     "fields": {
         "movie_id": 680,
         "title": "펄프 픽션",
@@ -2177,7 +1990,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 129,
+    "pk": 118,
     "fields": {
         "movie_id": 24,
         "title": "킬 빌: 1부",
@@ -2194,7 +2007,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 130,
+    "pk": 119,
     "fields": {
         "movie_id": 393,
         "title": "킬 빌: 2부",
@@ -2211,7 +2024,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 131,
+    "pk": 120,
     "fields": {
         "movie_id": 1555,
         "title": "스페니쉬 아파트먼트",
@@ -2228,7 +2041,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 132,
+    "pk": 121,
     "fields": {
         "movie_id": 1541,
         "title": "델마와 루이스",
@@ -2245,7 +2058,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 133,
+    "pk": 122,
     "fields": {
         "movie_id": 7326,
         "title": "주노",
@@ -2262,7 +2075,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 134,
+    "pk": 123,
     "fields": {
         "movie_id": 22798,
         "title": "위핏",
@@ -2279,7 +2092,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 135,
+    "pk": 124,
     "fields": {
         "movie_id": 18785,
         "title": "행오버",
@@ -2296,7 +2109,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 136,
+    "pk": 125,
     "fields": {
         "movie_id": 45243,
         "title": "행오버 2",
@@ -2313,7 +2126,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 137,
+    "pk": 126,
     "fields": {
         "movie_id": 5038,
         "title": "내 남자의 아내도 좋아",
@@ -2330,7 +2143,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 138,
+    "pk": 127,
     "fields": {
         "movie_id": 115,
         "title": "위대한 레보스키",
@@ -2347,7 +2160,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 139,
+    "pk": 128,
     "fields": {
         "movie_id": 70,
         "title": "밀리언 달러 베이비",
@@ -2364,24 +2177,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 140,
-    "fields": {
-        "movie_id": 44264,
-        "title": "더 브레이브",
-        "genre": "18,12,37,",
-        "release_date": "2010-12-22",
-        "overview": "1880년대 미국 아칸소주. 14세 소녀 매티 로스(헤일리 스타인펠드)는 자신의 아버지를 살해한 무법자 톰 채니(조쉬 브롤린)에게 복수를 다짐하고 젊은 시절 악명 높았던 연방보안관 루스터 코그번(제프 브리지스)을 고용해 그의 뒤를 쫓기 시작한다. 그러나 술주정뱅이 코그번은 그녀를 계속 실망시키고, 여기에 현상금을 노린 텍사스 특수경비대원 라 뷔프(맷 데이먼)까지 가세해 톰 채니를 잡기 위한 위험한 동행이 시작된다. 늙은 주정뱅이 보안관과 혈기왕성한 텍사스 레인저, 그리고 웨스턴 장르와 거리가 먼 소녀의 숨막히는 추격전이 시작되는데...",
-        "tagline": "그들이 보여준 것은 복수가 아니라 진정한 용기였다",
-        "trailer": null,
-        "backdrop_path": "/ivo5vhAftxFiEZtDyOhepiYR24G.jpg",
-        "poster_path": "/wzip5lDRSNuor0nDT2FGrdyvAf3.jpg",
-        "vote_average": 7.3,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 141,
+    "pk": 129,
     "fields": {
         "movie_id": 350,
         "title": "악마는 프라다를 입는다",
@@ -2398,7 +2194,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 142,
+    "pk": 130,
     "fields": {
         "movie_id": 21861,
         "title": "LOL (Laughing Out Loud)",
@@ -2415,7 +2211,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 143,
+    "pk": 131,
     "fields": {
         "movie_id": 14069,
         "title": "시간을 달리는 소녀",
@@ -2432,7 +2228,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 144,
+    "pk": 132,
     "fields": {
         "movie_id": 13754,
         "title": "철콘 근크리트",
@@ -2449,7 +2245,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 145,
+    "pk": 133,
     "fields": {
         "movie_id": 38142,
         "title": "초속 5센티미터",
@@ -2466,7 +2262,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 146,
+    "pk": 134,
     "fields": {
         "movie_id": 149,
         "title": "아키라",
@@ -2483,7 +2279,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 147,
+    "pk": 135,
     "fields": {
         "movie_id": 28874,
         "title": "썸머워즈",
@@ -2500,7 +2296,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 148,
+    "pk": 136,
     "fields": {
         "movie_id": 8392,
         "title": "이웃집 토토로",
@@ -2517,7 +2313,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 149,
+    "pk": 137,
     "fields": {
         "movie_id": 129,
         "title": "센과 치히로의 행방불명",
@@ -2534,7 +2330,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 150,
+    "pk": 138,
     "fields": {
         "movie_id": 128,
         "title": "모노노케 히메",
@@ -2551,7 +2347,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 151,
+    "pk": 139,
     "fields": {
         "movie_id": 10515,
         "title": "천공의 성 라퓨타",
@@ -2568,7 +2364,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 152,
+    "pk": 140,
     "fields": {
         "movie_id": 81,
         "title": "바람계곡의 나우시카",
@@ -2585,7 +2381,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 153,
+    "pk": 141,
     "fields": {
         "movie_id": 4935,
         "title": "하울의 움직이는 성",
@@ -2602,7 +2398,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 154,
+    "pk": 142,
     "fields": {
         "movie_id": 16859,
         "title": "마녀 배달부 키키",
@@ -2619,7 +2415,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 155,
+    "pk": 143,
     "fields": {
         "movie_id": 15283,
         "title": "폼포코 너구리 대작전",
@@ -2636,7 +2432,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 156,
+    "pk": 144,
     "fields": {
         "movie_id": 15080,
         "title": "추억은 방울방울",
@@ -2653,7 +2449,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 157,
+    "pk": 145,
     "fields": {
         "movie_id": 12477,
         "title": "반딧불이의 묘",
@@ -2670,7 +2466,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 158,
+    "pk": 146,
     "fields": {
         "movie_id": 37797,
         "title": "귀를 기울이면",
@@ -2687,7 +2483,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 159,
+    "pk": 147,
     "fields": {
         "movie_id": 15370,
         "title": "고양이의 보은",
@@ -2704,7 +2500,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 160,
+    "pk": 148,
     "fields": {
         "movie_id": 11621,
         "title": "붉은 돼지",
@@ -2721,7 +2517,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 161,
+    "pk": 149,
     "fields": {
         "movie_id": 21057,
         "title": "바다가 들린다",
@@ -2738,7 +2534,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 162,
+    "pk": 150,
     "fields": {
         "movie_id": 51739,
         "title": "마루 밑 아리에티",
@@ -2755,7 +2551,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 163,
+    "pk": 151,
     "fields": {
         "movie_id": 83389,
         "title": "코쿠리코 언덕에서",
@@ -2772,7 +2568,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 164,
+    "pk": 152,
     "fields": {
         "movie_id": 21036,
         "title": "팬더와 아기팬더",
@@ -2789,7 +2585,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 165,
+    "pk": 153,
     "fields": {
         "movie_id": 15371,
         "title": "루팡 3세: 칼리오스트로의 성",
@@ -2806,7 +2602,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 166,
+    "pk": 154,
     "fields": {
         "movie_id": 535,
         "title": "플래시댄스",
@@ -2823,7 +2619,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 167,
+    "pk": 155,
     "fields": {
         "movie_id": 6461,
         "title": "사랑후에 남겨진 것들",
@@ -2840,7 +2636,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 168,
+    "pk": 156,
     "fields": {
         "movie_id": 15152,
         "title": "OSS 117 : Le Caire, nid d'espions",
@@ -2857,7 +2653,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 169,
+    "pk": 157,
     "fields": {
         "movie_id": 15588,
         "title": "OSS 117: 리오 대작전",
@@ -2874,7 +2670,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 170,
+    "pk": 158,
     "fields": {
         "movie_id": 18947,
         "title": "락앤롤 보트",
@@ -2891,7 +2687,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 171,
+    "pk": 159,
     "fields": {
         "movie_id": 114,
         "title": "귀여운 여인",
@@ -2908,7 +2704,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 172,
+    "pk": 160,
     "fields": {
         "movie_id": 32856,
         "title": "발렌타인 데이",
@@ -2925,7 +2721,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 173,
+    "pk": 161,
     "fields": {
         "movie_id": 162,
         "title": "가위손",
@@ -2942,7 +2738,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 174,
+    "pk": 162,
     "fields": {
         "movie_id": 207,
         "title": "죽은 시인의 사회",
@@ -2959,7 +2755,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 175,
+    "pk": 163,
     "fields": {
         "movie_id": 22538,
         "title": "스콧 필그림",
@@ -2976,7 +2772,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 176,
+    "pk": 164,
     "fields": {
         "movie_id": 51736,
         "title": "Bloomington",
@@ -2993,7 +2789,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 177,
+    "pk": 165,
     "fields": {
         "movie_id": 141,
         "title": "도니 다코",
@@ -3010,7 +2806,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 178,
+    "pk": 166,
     "fields": {
         "movie_id": 73,
         "title": "아메리칸 히스토리 X",
@@ -3027,7 +2823,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 179,
+    "pk": 167,
     "fields": {
         "movie_id": 16,
         "title": "어둠 속의 댄서",
@@ -3044,7 +2840,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 180,
+    "pk": 168,
     "fields": {
         "movie_id": 11324,
         "title": "셔터 아일랜드",
@@ -3061,24 +2857,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 181,
-    "fields": {
-        "movie_id": 45269,
-        "title": "킹스 스피치",
-        "genre": "18,36,",
-        "release_date": "2010-09-06",
-        "overview": "1939년, 세기의 스캔들을 일으키며 왕위를 포기한 형 때문에 본의 아니게 왕위에 오른 알버트 왕자(콜린 퍼스)에겐 치명적인 단점이 있다. 사람들 앞에만 서면 말을 더듬는 것.  국왕의 자리가 버겁기만 한 알버트와 그를 지켜보는 아내 엘리자베스 왕비, 그리고 국민들도 애가 타기는 마찬가지다. 게다가 지금 세계는 2차 세계 대전 중. 불안한 정세 속 새로운 지도자를 간절히 원하는 국민들을 위해 알버트는 아내의 소개로 괴짜 언어 치료사 라이오넬 로그를 만나게 되고, 삐걱거리는 첫 만남 이후 둘은 기상천외한 치료법을 통해 말더듬증 극복에 도전하게 되는데...",
-        "tagline": "말더듬이 왕, 세상을 감동시킬 위대한 도전을 시작하다",
-        "trailer": null,
-        "backdrop_path": "/5eb7l7AE2yU0mvb38fR5qLNhDDH.jpg",
-        "poster_path": "/pjoGWlSQdojGkUBtCfFTW2a3AKR.jpg",
-        "vote_average": 7.7,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 182,
+    "pk": 169,
     "fields": {
         "movie_id": 1923,
         "title": "트윈픽스",
@@ -3095,7 +2874,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 183,
+    "pk": 170,
     "fields": {
         "movie_id": 500,
         "title": "저수지의 개들",
@@ -3112,7 +2891,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 184,
+    "pk": 171,
     "fields": {
         "movie_id": 78,
         "title": "블레이드 러너",
@@ -3129,7 +2908,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 185,
+    "pk": 172,
     "fields": {
         "movie_id": 6537,
         "title": "오퍼나지: 비밀의계단",
@@ -3146,7 +2925,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 186,
+    "pk": 173,
     "fields": {
         "movie_id": 1904,
         "title": "게이샤의 추억",
@@ -3163,7 +2942,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 187,
+    "pk": 174,
     "fields": {
         "movie_id": 627,
         "title": "트레인스포팅",
@@ -3180,7 +2959,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 188,
+    "pk": 175,
     "fields": {
         "movie_id": 16869,
         "title": "바스터즈: 거친 녀석들",
@@ -3189,7 +2968,7 @@
         "overview": "2차 세계 대전, 나치의 잔인하고 폭력적인 행태에 분개한 미군 알도 레인 중위는 당한 만큼 돌려준다는 강렬한 신념으로 최고의 재능을 가진 8명의 대원을 모아 바스터즈란 군단을 만들어 나치가 점령한 프랑스에 잠입해 복수를 시작한다. 어느 날 알도 레인 중위는 독일의 여배우이자 영국의 더블 스파이인 브리짓에게 뜻밖의 소식을 듣는다. 나치 수뇌부가 모두 참석하는 독일 전쟁 영화의 프리미어에 히틀러도 참석을 한다는 것. 한 번에 나치를 모두 쓸어버릴 계획으로 바스터즈는 이탈리아 영화 관계자로 분장해 극장으로 향하는데...",
         "tagline": "가장 쿨한 녀석들의 통쾌한 복수",
         "trailer": "5f30f1028ed03f0034ef53cc",
-        "backdrop_path": "/43508X0evUDHMoyMSecsLxcy7RK.jpg",
+        "backdrop_path": "/8pEnePgGyfUqj8Qa6d91OZQ6Aih.jpg",
         "poster_path": "/u8gcf764K5wBBDoXlQtnkOtVeHR.jpg",
         "vote_average": 8.2,
         "like_users": []
@@ -3197,7 +2976,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 189,
+    "pk": 176,
     "fields": {
         "movie_id": 641,
         "title": "레퀴엠",
@@ -3214,7 +2993,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 190,
+    "pk": 177,
     "fields": {
         "movie_id": 8952,
         "title": "필립 모리스",
@@ -3231,7 +3010,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 191,
+    "pk": 178,
     "fields": {
         "movie_id": 64690,
         "title": "드라이브",
@@ -3248,24 +3027,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 192,
-    "fields": {
-        "movie_id": 59436,
-        "title": "미드나잇 인 파리",
-        "genre": "14,35,10749,",
-        "release_date": "2011-05-11",
-        "overview": "약혼녀 이네즈와 파리로 여행 온 소설가 길. 파리의 화려함을 즐기고 싶어하는 이네즈와 달리 그곳의 낭만을 좋아하는 길은  홀로 파리의 밤거리를 산책하게 된다. 12시를 알리는 종이 울리는 순간 홀연히 나타난 클래식 푸조에 올라탄 길이 도착한 곳은 놀랍게도 1920년대 파리. 그 곳에서 그는 평소에 동경하던 헤밍웨이, 피카소, 달리 등 전설적 예술가들과 친구가 되어 매일 밤 꿈 같은 시간을 보낸다. 어느 날 헤밍웨이와 피카소의 연인 애드리아나를 만나게 된 길은 예술과 낭만을 사랑하는 매혹적인 그녀에게 빠져들게 되는데...",
-        "tagline": "매일 밤 12시, 시간을 넘나드는 로맨스가 시작된다",
-        "trailer": null,
-        "backdrop_path": "/b5bcKhvN6VP82U5ztNdPfOLiolD.jpg",
-        "poster_path": "/5bxTrwYjmQwnUNmoi0eaC74NLU0.jpg",
-        "vote_average": 7.5,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 193,
+    "pk": 179,
     "fields": {
         "movie_id": 116,
         "title": "매치 포인트",
@@ -3282,7 +3044,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 194,
+    "pk": 180,
     "fields": {
         "movie_id": 219,
         "title": "귀향",
@@ -3299,7 +3061,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 195,
+    "pk": 181,
     "fields": {
         "movie_id": 1991,
         "title": "데쓰 프루프",
@@ -3316,7 +3078,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 196,
+    "pk": 182,
     "fields": {
         "movie_id": 1417,
         "title": "판의 미로: 오필리아와 세개의 열쇠",
@@ -3333,7 +3095,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 197,
+    "pk": 183,
     "fields": {
         "movie_id": 65229,
         "title": "톰보이",
@@ -3350,7 +3112,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 198,
+    "pk": 184,
     "fields": {
         "movie_id": 71859,
         "title": "케빈에 대하여",
@@ -3367,7 +3129,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 199,
+    "pk": 185,
     "fields": {
         "movie_id": 63311,
         "title": "내가 사는 피부",
@@ -3384,7 +3146,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 200,
+    "pk": 186,
     "fields": {
         "movie_id": 8424,
         "title": "러브 미 이프 유 데어",
@@ -3401,7 +3163,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 201,
+    "pk": 187,
     "fields": {
         "movie_id": 64,
         "title": "그녀에게",
@@ -3418,7 +3180,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 202,
+    "pk": 188,
     "fields": {
         "movie_id": 7980,
         "title": "러블리 본즈",
@@ -3435,7 +3197,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 203,
+    "pk": 189,
     "fields": {
         "movie_id": 10139,
         "title": "밀크",
@@ -3452,7 +3214,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 204,
+    "pk": 190,
     "fields": {
         "movie_id": 39210,
         "title": "썸웨어",
@@ -3469,7 +3231,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 205,
+    "pk": 191,
     "fields": {
         "movie_id": 13,
         "title": "포레스트 검프",
@@ -3486,24 +3248,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 206,
-    "fields": {
-        "movie_id": 37799,
-        "title": "소셜 네트워크",
-        "genre": "18,",
-        "release_date": "2010-10-01",
-        "overview": "2003년 가을, 하버드대의 컴퓨터 천재 마크는 비밀 엘리트 클럽의 윈클보스 형제에게 하버드 선남선녀들만 교류할 수 있는 하버드 커넥션 사이트 제작을 의뢰 받는다. 하지만 여기서 획기적인 아이디어를 생각해낸 마크는 인맥 교류 사이트 페이스북을 개발, 절친 왈도의 도움으로 사이트를 오픈한다. 페이스북은 순식간에 모두의 마음을 사로잡고, 유명한 냅스터의 창시자 숀의 참여로 전세계로 번지면서 마크는 기업가치 58조원, 전세계 최연소 억만장자가 된다. 하지만 그 순간 윈클보스 형제는 물론 왈도마저 전대미문의 소송을 제기하는데...",
-        "tagline": "5억 명의 친구가 생긴 순간 진짜 친구들은 적이 되었다",
-        "trailer": "600ec66b0e597b003f3291d2",
-        "backdrop_path": "/zPaWTuYD9gceF2ILlI7zyJzqYlr.jpg",
-        "poster_path": "/hgaAWIIOPlnrd9nLc1SB7rTc8CT.jpg",
-        "vote_average": 7.3,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 207,
+    "pk": 192,
     "fields": {
         "movie_id": 2652,
         "title": "하드 캔디",
@@ -3520,7 +3265,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 208,
+    "pk": 193,
     "fields": {
         "movie_id": 81836,
         "title": "로마 위드 러브",
@@ -3537,7 +3282,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 209,
+    "pk": 194,
     "fields": {
         "movie_id": 15,
         "title": "시민 케인",
@@ -3554,7 +3299,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 210,
+    "pk": 195,
     "fields": {
         "movie_id": 185,
         "title": "시계태엽 오렌지",
@@ -3571,7 +3316,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 211,
+    "pk": 196,
     "fields": {
         "movie_id": 470,
         "title": "21그램",
@@ -3588,7 +3333,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 212,
+    "pk": 197,
     "fields": {
         "movie_id": 1124,
         "title": "프레스티지",
@@ -3605,7 +3350,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 213,
+    "pk": 198,
     "fields": {
         "movie_id": 752,
         "title": "브이 포 벤데타",
@@ -3622,7 +3367,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 214,
+    "pk": 199,
     "fields": {
         "movie_id": 773,
         "title": "미스 리틀 선샤인",
@@ -3639,7 +3384,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 215,
+    "pk": 200,
     "fields": {
         "movie_id": 194,
         "title": "아멜리에",
@@ -3656,7 +3401,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 216,
+    "pk": 201,
     "fields": {
         "movie_id": 2841,
         "title": "인게이지먼트",
@@ -3673,7 +3418,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 217,
+    "pk": 202,
     "fields": {
         "movie_id": 14,
         "title": "아메리칸 뷰티",
@@ -3690,7 +3435,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 218,
+    "pk": 203,
     "fields": {
         "movie_id": 42188,
         "title": "네버 렛 미 고",
@@ -3707,7 +3452,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 219,
+    "pk": 204,
     "fields": {
         "movie_id": 2668,
         "title": "슬리피 할로우",
@@ -3724,7 +3469,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 220,
+    "pk": 205,
     "fields": {
         "movie_id": 4011,
         "title": "비틀쥬스",
@@ -3741,7 +3486,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 221,
+    "pk": 206,
     "fields": {
         "movie_id": 142,
         "title": "브로크백 마운틴",
@@ -3758,7 +3503,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 222,
+    "pk": 207,
     "fields": {
         "movie_id": 19995,
         "title": "아바타",
@@ -3775,7 +3520,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 223,
+    "pk": 208,
     "fields": {
         "movie_id": 22881,
         "title": "블라인드 사이드",
@@ -3792,7 +3537,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 224,
+    "pk": 209,
     "fields": {
         "movie_id": 17654,
         "title": "디스트릭트 9",
@@ -3809,7 +3554,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 225,
+    "pk": 210,
     "fields": {
         "movie_id": 24684,
         "title": "언 에듀케이션",
@@ -3826,7 +3571,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 226,
+    "pk": 211,
     "fields": {
         "movie_id": 12162,
         "title": "허트 로커",
@@ -3843,24 +3588,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 227,
-    "fields": {
-        "movie_id": 16869,
-        "title": "바스터즈: 거친 녀석들",
-        "genre": "18,28,53,10752,",
-        "release_date": "2009-08-19",
-        "overview": "2차 세계 대전, 나치의 잔인하고 폭력적인 행태에 분개한 미군 알도 레인 중위는 당한 만큼 돌려준다는 강렬한 신념으로 최고의 재능을 가진 8명의 대원을 모아 바스터즈란 군단을 만들어 나치가 점령한 프랑스에 잠입해 복수를 시작한다. 어느 날 알도 레인 중위는 독일의 여배우이자 영국의 더블 스파이인 브리짓에게 뜻밖의 소식을 듣는다. 나치 수뇌부가 모두 참석하는 독일 전쟁 영화의 프리미어에 히틀러도 참석을 한다는 것. 한 번에 나치를 모두 쓸어버릴 계획으로 바스터즈는 이탈리아 영화 관계자로 분장해 극장으로 향하는데...",
-        "tagline": "가장 쿨한 녀석들의 통쾌한 복수",
-        "trailer": "5f30f1028ed03f0034ef53cc",
-        "backdrop_path": "/43508X0evUDHMoyMSecsLxcy7RK.jpg",
-        "poster_path": "/u8gcf764K5wBBDoXlQtnkOtVeHR.jpg",
-        "vote_average": 8.2,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 228,
+    "pk": 212,
     "fields": {
         "movie_id": 25793,
         "title": "프레셔스",
@@ -3877,7 +3605,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 229,
+    "pk": 213,
     "fields": {
         "movie_id": 12573,
         "title": "시리어스 맨",
@@ -3894,7 +3622,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 230,
+    "pk": 214,
     "fields": {
         "movie_id": 14160,
         "title": "업",
@@ -3911,7 +3639,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 231,
+    "pk": 215,
     "fields": {
         "movie_id": 22947,
         "title": "인 디 에어",
@@ -3928,7 +3656,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 232,
+    "pk": 216,
     "fields": {
         "movie_id": 4922,
         "title": "벤자민 버튼의 시간은 거꾸로 간다",
@@ -3945,7 +3673,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 233,
+    "pk": 217,
     "fields": {
         "movie_id": 11499,
         "title": "프로스트 VS 닉슨",
@@ -3962,24 +3690,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 234,
-    "fields": {
-        "movie_id": 10139,
-        "title": "밀크",
-        "genre": "36,18,",
-        "release_date": "2008-11-05",
-        "overview": "인권운동가이자 정치인이었으며 그의 시대로부터 지금까지 수많은 이들에게 희망의 이름이 된, 하비 밀크의 생애 마지막 8년의 이야기. 1970년, 40세 생일을 맞이한 뉴욕의 평범한 증권맨 하비 밀크(숀 펜)는 스스로에게 솔직하지 못했던 지난 인생을 뒤돌아보며 애인인 스콧(제임스 프랑코)과 함께 자유로운 분위기의 샌프란시스코로 이주하기로 결심한다.  그곳에서 작은 카메라 가게를 차린 밀크는 편견 없는 마음과 유쾌한 성품으로 많은 이들의 친구가 되고, 동성애자들에 대한 일상적인 편견과 폭력으로 고통받는 이웃들을 보며 게이 인권운동을 시작한다. 인종, 나이, 성에 상관 없이 모두가 평등한 권리와 기회를 누리는 사회를 꿈꾸던 그는 3번의 실패 끝에 샌프란시스코 시의원에 당선되는데...",
-        "tagline": "거대한 편견의 벽을 무너뜨린 희망의 이름",
-        "trailer": null,
-        "backdrop_path": "/znzTuCjd8cm0uGxSqFOuwJO6anz.jpg",
-        "poster_path": "/zJlkXDJIZ2e5zhOLMjsNyKeDQJl.jpg",
-        "vote_average": 7.3,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 235,
+    "pk": 218,
     "fields": {
         "movie_id": 8055,
         "title": "더 리더: 책 읽어주는 남자",
@@ -3996,7 +3707,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 236,
+    "pk": 219,
     "fields": {
         "movie_id": 12405,
         "title": "슬럼독 밀리어네어",
@@ -4013,24 +3724,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 237,
-    "fields": {
-        "movie_id": 19995,
-        "title": "아바타",
-        "genre": "28,12,14,878,",
-        "release_date": "2009-12-10",
-        "overview": "가까운 미래, 지구는 에너지 고갈 문제를 해결하기 위해 머나먼 행성 판도라에서 대체 자원을 채굴하기 시작한다. 하지만 판도라의 독성을 지닌 대기로 인해 자원 획득에 어려움을 겪게 된 인류는 판도라의 토착민 나비의 외형에 인간의 의식을 주입, 원격 조종이 가능한 새로운 생명체를 탄생시키는 프로그램을 개발한다. 한편 하반신이 마비된 전직 해병대원 제이크 설리는 아바타 프로그램에 참가할 것을 제안받는다. 그 곳에서 자신의 아바타를 통해 자유롭게 걸을 수 있게 된 제이크는 자원 채굴을 막으려는 나비의 무리에 침투하라는 임무를 부여받는데...",
-        "tagline": "새로운 세계가 열린다",
-        "trailer": "592a69d9c3a368782d056372",
-        "backdrop_path": "/AmHOQ7rpHwiaUMRjKXztnauSJb7.jpg",
-        "poster_path": "/zygmx5abXeDpr3fWYX4jlXFZ1wh.jpg",
-        "vote_average": 7.5,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 238,
+    "pk": 220,
     "fields": {
         "movie_id": 597,
         "title": "타이타닉",
@@ -4047,24 +3741,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 239,
-    "fields": {
-        "movie_id": 24428,
-        "title": "어벤져스",
-        "genre": "878,28,12,",
-        "release_date": "2012-04-25",
-        "overview": "에너지원 큐브를 이용한 적의 등장으로 인류가 위험에 처하자 국제평화유지기구인 쉴드의 국장 닉 퓨리는 어벤져스 작전을 위해 전 세계에 흩어져 있던 슈퍼히어로들을 찾아나선다. 아이언맨부터 토르, 헐크, 캡틴 아메리카는 물론, 쉴드의 요원인 블랙 위도우, 호크 아이까지, 최고의 슈퍼히어로들이 어벤져스의 멤버로 모이게 되지만, 각기 개성이 강한 이들의 만남은 예상치 못한 방향으로 흘러가는데...",
-        "tagline": "최강의 슈퍼히어로들이 모였다.",
-        "trailer": "57d63395c3a3684f3400445c",
-        "backdrop_path": "/nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg",
-        "poster_path": "/1uHRkB2Q00Y4i7I7KNd0jGi4OmY.jpg",
-        "vote_average": 7.7,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 240,
+    "pk": 221,
     "fields": {
         "movie_id": 12445,
         "title": "해리 포터와 죽음의 성물 2",
@@ -4081,7 +3758,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 241,
+    "pk": 222,
     "fields": {
         "movie_id": 122,
         "title": "반지의 제왕: 왕의 귀환",
@@ -4098,7 +3775,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 242,
+    "pk": 223,
     "fields": {
         "movie_id": 38356,
         "title": "트랜스포머 3",
@@ -4115,24 +3792,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 243,
-    "fields": {
-        "movie_id": 49026,
-        "title": "다크 나이트 라이즈",
-        "genre": "28,80,18,53,",
-        "release_date": "2012-07-16",
-        "overview": "배트맨이 조커와의 대결을 끝으로 세상에서 모습을 감춘 8년 후, 하비 덴트의 죽음에 대한 책임을 떠안은 배트맨은 모든 것을 희생하며 떠난다. 범죄방지 덴트법으로 인해 한동안 평화가 지속되던 고담시의 파멸을 예고하며 나타난 마스크를 쓴 잔인한 악당, 최강의 적 베인이 등장한다. 베인은 배트맨이 스스로 택한 유배 생활에 종지부를 찍게 하지만, 다시 돌아온 배트맨에게 베인은 만만한 상대가 아니다. 자신을 거부한 사람들의 고통을 지켜볼 것인가, 정의의 수호자로 나설 것인가. 배트맨은 승패를 알 수 없는 마지막 전투를 시작하려 하는데...",
-        "tagline": "배트맨 vs 베인, 운명을 건 최후의 전투",
-        "trailer": "600c52950b5fd6003f5abb6e",
-        "backdrop_path": "/yzsegNpkRCPadnWmshrJzT3ardR.jpg",
-        "poster_path": "/stbZZs3WMPr9rvAT92Qd8gXCUfx.jpg",
-        "vote_average": 7.7,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 244,
+    "pk": 224,
     "fields": {
         "movie_id": 58,
         "title": "캐리비안의 해적: 망자의 함",
@@ -4149,24 +3809,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 245,
-    "fields": {
-        "movie_id": 10193,
-        "title": "토이 스토리 3",
-        "genre": "16,10751,35,",
-        "release_date": "2010-06-16",
-        "overview": "모든 장난감들이 겪는 가장 슬픈 일은 바로 주인이 성장해 더이상 자신들과 놀아주지 않는 것. 우디와 버즈에게도 그 위기가 찾아온다. 앤디가 대학에 진학, 집을 떠나게 된 것. 헤어짐의 불안에 떨던 토이들은 앤디 엄마의 실수로 집을 나오게 되고 우여곡절 끝에 탁아소에 기증된다. 앤디가 자신들을 버렸다고 생각하는 장난감들. 게다가 어린이집의 아이들은 난폭하고 험한 데다가, 상상도 못했던 거대한 음모까지 숨겨져 있는 어린이집 장난감의 세계. 앤디가 여전히 자신들을 사랑한다는 사실을 알게 된 장난감들은 앤디 곁으로 돌아가기 위해 생애 가장 큰 모험을 결심하는데...",
-        "tagline": "전세계가 감동한 가장 위대한 탈출",
-        "trailer": null,
-        "backdrop_path": "/wE5JGzujfvDPMIfFjJyrhXFjZLc.jpg",
-        "poster_path": "/hbUWahBLUon8RaIb9Tq7aWCBCtS.jpg",
-        "vote_average": 7.8,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 246,
+    "pk": 225,
     "fields": {
         "movie_id": 1865,
         "title": "캐리비안의 해적: 낯선 조류",
@@ -4183,7 +3826,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 247,
+    "pk": 226,
     "fields": {
         "movie_id": 1893,
         "title": "스타워즈 에피소드 1: 보이지 않는 위험",
@@ -4200,7 +3843,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 248,
+    "pk": 227,
     "fields": {
         "movie_id": 12155,
         "title": "이상한 나라의 앨리스",
@@ -4217,24 +3860,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 249,
-    "fields": {
-        "movie_id": 155,
-        "title": "다크 나이트",
-        "genre": "18,28,80,53,",
-        "release_date": "2008-07-16",
-        "overview": "범죄와 부정부패를 제거하여 고담시를 지키려는 배트맨. 그는 짐 고든 형사와 패기 넘치는 고담시 지방 검사 하비 덴트와 함께 도시를 범죄 조직으로부터 영원히 구원하고자 한다. 세 명의 의기투합으로 위기에 처한 악당들이 모인 자리에 보라색 양복을 입고 얼굴에 짙게 화장을 한 괴이한 존재가 나타나 배트맨을 죽이자는 사상 초유의 제안을 한다. 그는 바로 어떠한 룰도, 목적도 없는 사상 최악의 악당 미치광이 살인광대 조커. 배트맨을 죽이고 고담시를 끝장내버리기 위한 조커의 광기 어린 행각에 도시는 혼란에 빠지는데...",
-        "tagline": "이 도시에 정의는 죽었다",
-        "trailer": "5c56beb8c3a36805e883fadf",
-        "backdrop_path": "/nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
-        "poster_path": "/e1nMtpUTtaJGXbeZZ2ajaIOyTgU.jpg",
-        "vote_average": 8.5,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 250,
+    "pk": 228,
     "fields": {
         "movie_id": 671,
         "title": "해리 포터와 마법사의 돌",
@@ -4251,7 +3877,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 251,
+    "pk": 229,
     "fields": {
         "movie_id": 285,
         "title": "캐리비안의 해적: 세상의 끝에서",
@@ -4268,7 +3894,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 252,
+    "pk": 230,
     "fields": {
         "movie_id": 12444,
         "title": "해리 포터와 죽음의 성물 1",
@@ -4285,7 +3911,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 253,
+    "pk": 231,
     "fields": {
         "movie_id": 8587,
         "title": "라이온 킹",
@@ -4302,7 +3928,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 254,
+    "pk": 232,
     "fields": {
         "movie_id": 675,
         "title": "해리 포터와 불사조 기사단",
@@ -4319,7 +3945,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 255,
+    "pk": 233,
     "fields": {
         "movie_id": 767,
         "title": "해리 포터와 혼혈 왕자",
@@ -4336,7 +3962,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 256,
+    "pk": 234,
     "fields": {
         "movie_id": 121,
         "title": "반지의 제왕: 두 개의 탑",
@@ -4353,7 +3979,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 257,
+    "pk": 235,
     "fields": {
         "movie_id": 329,
         "title": "쥬라기 공원",
@@ -4370,7 +3996,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 258,
+    "pk": 236,
     "fields": {
         "movie_id": 809,
         "title": "슈렉 2",
@@ -4387,7 +4013,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 259,
+    "pk": 237,
     "fields": {
         "movie_id": 674,
         "title": "해리 포터와 불의 잔",
@@ -4404,24 +4030,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 260,
-    "fields": {
-        "movie_id": 559,
-        "title": "스파이더맨 3",
-        "genre": "14,28,12,",
-        "release_date": "2007-05-01",
-        "overview": "대중의 사랑을 듬뿍 받으며 진정한 영웅으로 거듭난 스파이더맨, 피터 파커는 어느 날, 외계에서 온 수수께끼의 유기체인 심비오트에 감염되고 스파이더맨은 오리지날 스파이더맨에서 블랙 슈트 스파이더맨으로 변화한다. 한층 업그레이드 되고 강력해진 파워를 얻게 된 스파이더맨은 자신의 힘에 도취되어 마음껏 세상을 즐긴다. 그러나 아버지의 복수를 위해 뉴 고블린이 된 해리와 물리 실험에 노출되어 능력을 얻게 된 피터의 삼촌을 죽인 진범 샌드맨은 호시탐탐 스파이더맨을 노리는데...",
-        "tagline": "어둠이 될 것인가, 어둠에 맞설 것인가",
-        "trailer": "57d3ab0492514160a70021a8",
-        "backdrop_path": "/6MQmtWk4cFwSDyNvIgoJRBIHUT3.jpg",
-        "poster_path": "/tbPLMa0cZ4bUnyCYD0loAJeoz2H.jpg",
-        "vote_average": 6.3,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 261,
+    "pk": 238,
     "fields": {
         "movie_id": 8355,
         "title": "아이스 에이지 3: 공룡시대",
@@ -4438,7 +4047,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 262,
+    "pk": 239,
     "fields": {
         "movie_id": 57800,
         "title": "아이스 에이지 4: 대륙 이동설",
@@ -4455,7 +4064,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 263,
+    "pk": 240,
     "fields": {
         "movie_id": 672,
         "title": "해리 포터와 비밀의 방",
@@ -4472,7 +4081,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 264,
+    "pk": 241,
     "fields": {
         "movie_id": 120,
         "title": "반지의 제왕: 반지 원정대",
@@ -4489,7 +4098,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 265,
+    "pk": 242,
     "fields": {
         "movie_id": 12,
         "title": "니모를 찾아서",
@@ -4506,7 +4115,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 266,
+    "pk": 243,
     "fields": {
         "movie_id": 1895,
         "title": "스타워즈 에피소드 3: 시스의 복수",
@@ -4523,7 +4132,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 267,
+    "pk": 244,
     "fields": {
         "movie_id": 8373,
         "title": "트랜스포머: 패자의 역습",
@@ -4540,24 +4149,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 268,
-    "fields": {
-        "movie_id": 27205,
-        "title": "인셉션",
-        "genre": "28,878,12,",
-        "release_date": "2010-07-15",
-        "overview": "타인의 꿈과 접속해 생각을 빼낼 수 있는 근미래, 돔 코브는 꿈의 보안 프로그래머이자 동시에 침입자다. 그는 일본인 사업가 사이토의 제안에 따라 거대 합병 기업의 총수가 될 피셔의 꿈을 설계하여 기업 합병을 막으려 든다. 그 일을 성사시키면 코브는 사이토의 도움으로 아내의 살해범으로 몰린 자신의 누명을 뒤로 하고 사랑스런 자녀들이 있는 집으로 돌아갈 수 있다. 마침내 코브 일행은 꿈 안의 꿈 안의 또 꿈이라는 경로를 거치며 피셔의 꿈과 무의식 깊숙한 곳을 설계하고 침투한다.",
-        "tagline": "생각을 훔치는 거대한 전쟁",
-        "trailer": "600cefdf0b5fd6003c5c6934",
-        "backdrop_path": "/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
-        "poster_path": "/jSm8mzp7sucgL8NwINIoAmx4dS5.jpg",
-        "vote_average": 8.3,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 269,
+    "pk": 245,
     "fields": {
         "movie_id": 602,
         "title": "인디펜던스 데이",
@@ -4574,24 +4166,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 270,
-    "fields": {
-        "movie_id": 557,
-        "title": "스파이더맨",
-        "genre": "14,28,",
-        "release_date": "2002-05-01",
-        "overview": "평범하고 내성적인 고등학생 피터 파커는 우연히 방사능에 감염된 거미에 물린다.그 후, 피터는 손에서 거미줄이 튀어 나오고 벽을 기어 오를 수 있는 거미와 같은 능력을 갖게 된다. 다가오는 위험을 본능적으로 감지하는 초감각과 엄청난 파워를 소유하게 된 것이다. 피터는 짝사랑하던 메리 제인의 관심을 끌기 위해 멋진 스포츠카를 구입하는데 초능력을 처음 사용한다. 그러다 사랑하는 벤 아저씨의 죽음을 계기로 그 힘을 악의 세력에 대항하는데 쓰기로 결심한다. 한편 피터의 절친 해리 오스본의 아버지인 노만은 실험 도중 가스에 중독되어 악의 화신 그린 고블린으로 변하는데...",
-        "tagline": "큰 힘에는 큰 책임이 따른다",
-        "trailer": "57d3aa1b925141609e001fbd",
-        "backdrop_path": "/muth4OYamXf41G2evdrLEg8d3om.jpg",
-        "poster_path": "/eXbCqcUsUDUq2qqGmU5i20S0tjo.jpg",
-        "vote_average": 7.2,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 271,
+    "pk": 246,
     "fields": {
         "movie_id": 11,
         "title": "스타워즈 에피소드 4: 새로운 희망",
@@ -4608,7 +4183,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 272,
+    "pk": 247,
     "fields": {
         "movie_id": 810,
         "title": "슈렉 3",
@@ -4625,7 +4200,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 273,
+    "pk": 248,
     "fields": {
         "movie_id": 673,
         "title": "해리 포터와 아즈카반의 죄수",
@@ -4642,7 +4217,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 274,
+    "pk": 249,
     "fields": {
         "movie_id": 217,
         "title": "인디아나 존스: 크리스탈 해골의 왕국",
@@ -4659,24 +4234,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 275,
-    "fields": {
-        "movie_id": 558,
-        "title": "스파이더맨 2",
-        "genre": "28,12,14,",
-        "release_date": "2004-06-25",
-        "overview": "우연한 사고로 특별한 능력을 갖게된 피터 파커는 대학생과 슈퍼 히어로의 신분을 오가며 짜릿한 생활을 하지만 사랑 하는 메리 제인에게조차 자신의 마음을 열 수 없는 현실은 그들을 안타까운 로맨스로 이끈다. 한편 스파이더맨에게 아버지를 잃고 복수심에 불타는 피터의 친구 해리가 연구 중 폭발로 기계촉수와 엄청난 파워를 갖게된 닥터 옥토퍼스에게 뿌리치지 못할 제안을 하면서 도시 전체가 걷잡을 수 없는 위험에 휘말리게 되고, 스파이더맨의 운명은 점차 예측불가능한 상황으로 전개되는데...",
-        "tagline": "전세계가 기다려온 영웅이 돌아온다",
-        "trailer": "57d3aadfc3a36855720021e0",
-        "backdrop_path": "/6al048Lat3eLVQOuKtc9h6Tu94d.jpg",
-        "poster_path": "/hHrdrG8aRkLlrQaAJZjKhaweJNa.jpg",
-        "vote_average": 7.1,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 276,
+    "pk": 250,
     "fields": {
         "movie_id": 14161,
         "title": "2012",
@@ -4693,7 +4251,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 277,
+    "pk": 251,
     "fields": {
         "movie_id": 591,
         "title": "다빈치 코드",
@@ -4710,7 +4268,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 278,
+    "pk": 252,
     "fields": {
         "movie_id": 601,
         "title": "E. T.",
@@ -4727,24 +4285,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 279,
-    "fields": {
-        "movie_id": 1930,
-        "title": "어메이징 스파이더맨",
-        "genre": "28,12,14,",
-        "release_date": "2012-06-23",
-        "overview": "어릴적 사라진 부모 대신 삼촌 내외와 살고 있는 피터 파커는 평범한 학교 생활을 하며 일상을 보내고, 같은 학교 학생 그웬 스테이시와 첫사랑에 빠져 우정과 사랑, 그리고 둘 만의 비밀을 키워나간다. 어느 날 아버지가 사용했던 가방을 발견하고 부모님의 실종사건에 대한 의심을 품게 된 그는 숨겨져 왔던 과거의 비밀을 추적하게 된다. 아버지의 옛 동료 코너스 박사의 실험실을 찾아가게 된 피터는 우연한 사고로 특별한 능력을 갖게 되고, 피터의 도움으로 연구를 완성한 코너스 박사는 자신의 숨겨진 자아인 악당 리자드를 탄생시키는데...",
-        "tagline": "전세계를 사로잡은 영웅, 그러나 아무도 몰랐던 그의 이야기",
-        "trailer": "57d3ab54c3a368556f002135",
-        "backdrop_path": "/xYz4u1jWCKyXGzddMJeOL845DTr.jpg",
-        "poster_path": "/egsgKNPmMahQgNhmmYxiMVbLPrC.jpg",
-        "vote_average": 6.6,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 280,
+    "pk": 253,
     "fields": {
         "movie_id": 10192,
         "title": "슈렉 포에버",
@@ -4761,7 +4302,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 281,
+    "pk": 254,
     "fields": {
         "movie_id": 411,
         "title": "나니아 연대기: 사자, 마녀 그리고 옷장",
@@ -4778,7 +4319,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 282,
+    "pk": 255,
     "fields": {
         "movie_id": 604,
         "title": "매트릭스 2: 리로디드",
@@ -4795,24 +4336,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 283,
-    "fields": {
-        "movie_id": 14160,
-        "title": "업",
-        "genre": "16,35,10751,12,",
-        "release_date": "2009-05-28",
-        "overview": "평생 모험을 꿈꿔 왔던 칼 할아버지는 재개발 공사 현장의 인부를 실수로 다치게 하고 집을 빼앗길 위기에 처한다. 그 동안 미뤄 왔던, 먼저 세상을 떠난 아내와의 약속을 지키기 위해 그는 수천 개의 풍선을 매달아 집을 통째로 남아메리카로 날려 버린다. 하지만 이 위대한 모험에 초대 받지 않은 불청객이 있었으니, 바로 황야의 어린이 탐험가 러셀. 우여곡절 끝에 도착한 남미에서 칼은 어린 시절의 우상이었던 위대한 모험가 찰스 먼츠를 만나게 되는데... 그들은 과연 남미의 잃어버린 세계에서 사라져 버린 꿈과 희망, 행복을 다시 찾을 수 있을까?",
-        "tagline": "한방울 눈물과 한바탕 웃음",
-        "trailer": "600965182495ab003f08bc85",
-        "backdrop_path": "/h8C7KZwCJO5DN7jPifc7AoIjx7k.jpg",
-        "poster_path": "/lL2WzkjLZP0RkPgUhybBjb9x9SL.jpg",
-        "vote_average": 7.9,
-        "like_users": []
-    }
-},
-{
-    "model": "movies.movie",
-    "pk": 284,
+    "pk": 256,
     "fields": {
         "movie_id": 18239,
         "title": "뉴 문",
@@ -4829,7 +4353,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 285,
+    "pk": 257,
     "fields": {
         "movie_id": 1858,
         "title": "트랜스포머",
@@ -4846,7 +4370,7 @@
 },
 {
     "model": "movies.movie",
-    "pk": 286,
+    "pk": 258,
     "fields": {
         "movie_id": 50619,
         "title": "브레이킹 던 Part1",

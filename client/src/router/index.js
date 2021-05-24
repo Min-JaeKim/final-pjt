@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/movie/Home.vue'
 import Random from '../views/movie/Random.vue'
-import MyMovieList from '../views/movie/MyMovieList.vue'
 import Signup from '../views/accounts/Signup'
 import Login from '../views/accounts/Login'
 
@@ -18,11 +17,6 @@ const routes = [
     path: '/movie/random',
     name: 'Random',
     component: Random,
-  },
-  {
-    path: '/movie/mymovielist',
-    name: 'MyMovieList',
-    component: MyMovieList,
   },
   {
     path: '/accounts/login',

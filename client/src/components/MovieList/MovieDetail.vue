@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Content from '@/components/Content'
+import Content from '@/components/MovieList/MovieDetail/Content'
 
 export default {
   name: 'MovieDetail',

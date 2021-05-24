@@ -3,15 +3,15 @@
     <h1>{{ movie.title }}</h1>
     <img :src="`https://image.tmdb.org/t/p/w200/${movie.poster_path}`" :alt="movie.title" class="d-inline">
     <Basic/>
-    <Detail/>
+    <Detail :movie-id="movie.movie_id"/>
     <Rec/>
   </div>
 </template>
 
 <script>
-import Basic from '@/components/Basic' 
-import Detail from '@/components/Detail' 
-import Rec from '@/components/Rec' 
+import Basic from '@/components/MovieList/MovieDetail/Content/Basic' 
+import Detail from '@/components/MovieList/MovieDetail/Content/Detail' 
+import Rec from '@/components/MovieList/MovieDetail/Content/Rec' 
 
 // import Vue from 'vue'
 // import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
