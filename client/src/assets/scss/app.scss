@@ -1,0 +1,8 @@
+$body-bg: rgb(5, 1, 5);
+$purple: rgb(172, 19, 146);
+$theme-colors: (
+  "purple": $purple,
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+// @import 'node_modules/bootstrap-vue/src/index.scss';
