@@ -79,14 +79,16 @@ def likes(request, movie_id):
 @api_view(['GET'])
 def review_list(request, movie_id):
     movie = get_object_or_404(Movie, movie_id=movie_id)
-    comments = get_list_or_404(Comment , movie=movie)
-    serializer = CommentListSerializer(comments, many=True)
-    data = {
-        'content': serializer.data.get('content'),
-        'username': request.user.username
-    }
-    return Response(data, status=status.HTTP_200_OK)
-    
+    if len(Comment.objects.filter(movie=movie)):
+        comments = get_list_or_404(Comment, movie=movie)
+        print(comments)
+        serializer = CommentListSerializer(comments, many=True)
+        data = {
+            'content': serializer.data.get('content'),
+            'username': request.user.username
+        }
+        return Response(data, status=status.HTTP_200_OK)
+    return Response([], status=status.HTTP_200_OK)
 
 @api_view(['POST'])
 @authentication_classes([JSONWebTokenAuthentication])

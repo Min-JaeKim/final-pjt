@@ -1,11 +1,11 @@
 <template>
-  <ul class="list-unstyled">
+  <div>
     <MovieList
       v-for="(movieList, idx) in movieList"
       :key="idx"
       :movieList="movieList"
     />
-  </ul>
+  </div>
 </template>
 
 <script>

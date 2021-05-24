@@ -11,7 +11,7 @@ export default {
   name: 'Detail',
   props: {
     movieId: {
-      type: String
+      type: Number
     }
   },
   data: function() {
@@ -26,7 +26,7 @@ export default {
       }
       axios({
         method: 'post',
-        url: `http://localhost:8000/movies/${this.movieId}/review_create/`,
+        url: `http://127.0.0.1:8000/movies/${this.movieId}/review_create/`,
         data: request,
         headers: this.$store.state.setToken()
       })
@@ -39,12 +39,9 @@ export default {
     }
   },
   created: function () {
-    console.log(this.movie)
-    console.log(this.movie)
-    console.log(this.movie)
     axios ({
       method: 'get',
-      url: `http://localhost:8000/movies/${this.movieId}/review_list/`,
+      url: `http://127.0.0.1:8000/movies/${this.movieId}/review_list/`,
     })
       .then(res => {
         console.log(res)

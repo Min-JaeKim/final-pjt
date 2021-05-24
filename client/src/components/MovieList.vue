@@ -1,5 +1,5 @@
 <template>
-  <b-media>
+  <div>
     <h3>{{ movieList[0].description }}</h3>
     <MovieCard 
       v-for="(movieId, idx) in movieList"
@@ -8,7 +8,7 @@
       @is-modal="isModal"
     />
     <MovieDetail v-if="isModalViewed" @close-modal="isModalViewed = false"/>
-  </b-media>
+  </div>
 </template>
 
 <script>
