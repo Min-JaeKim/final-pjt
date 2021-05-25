@@ -71,10 +71,10 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: rgb(172, 19, 146);
+  color: rgb(162, 48, 255);
 }
 div {
-  color: rgb(172, 19, 146);
+  color: rgb(162, 48, 255);
 }
 
 /* #nav a.router-link-exact-active {
