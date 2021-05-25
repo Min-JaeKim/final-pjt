@@ -4,6 +4,7 @@ import Home from '../views/movie/Home.vue'
 import Random from '../views/movie/Recom.vue'
 import Signup from '../views/accounts/Signup'
 import Login from '../views/accounts/Login'
+import MyPage from '../views/accounts/MyPage'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/accounts/signup',
     name: 'Signup',
     component: Signup,
+  },
+  {
+    path: '/accounts/mypage',
+    name: 'MyPage',
+    component: MyPage,
   },
 ]
 
