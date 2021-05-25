@@ -1,9 +1,11 @@
 <template>
   <div>
-    <img 
-      :src="`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`" 
-      :alt="`${movie.title}`"
-    >
+    <div id="temp" v-b-hover="hoverHandler" :style="width">
+      <img 
+        :src="`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`" 
+        :alt="`${movie.title}`"
+      >
+    </div>
   </div>
 </template>
 
@@ -11,7 +13,29 @@
 export default {
   nmae: 'Slide',
   props: {
-    movieId: Object,
+    movieId: Number,
+    top: null,
+  },
+  data: function () {
+    return {
+      width: "width: 19%"
+    }
+  },
+  methods: {
+    selectMovie: function () {
+      this.$store.dispatch('selectMovie', this.movie)
+    },
+    hoverHandler(isHovered) {
+      if (isHovered) {
+        this.isViewed = isHovered
+        this.selectMovie()
+        this.width = "width: 326px"
+        console.log(isHovered)
+      } else {
+        this.isViewed = false
+        this.width = "width: 19%"
+      }
+    }
   },
   computed: {
     movie: function () {
@@ -25,7 +49,16 @@ export default {
 </script>
 
 <style>
- img {
-   width: 100%;
- }
+  img {
+    width: 100%;
+  }
+  #temp {
+    position: relative;
+    top: 18%;
+  }
+  #temp:hover {
+    top: 0%;
+    width: 326px;
+    transition: all 1s ease-in-out;
+}
 </style>
