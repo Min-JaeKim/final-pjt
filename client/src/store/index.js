@@ -25,7 +25,8 @@ export default new Vuex.Store({
           Authorization: `JWT ${token}`
       }
       return config
-    }
+    },
+    username: null,
   },
   mutations: {
     LOAD_DATA: function (state, data) {
@@ -36,6 +37,9 @@ export default new Vuex.Store({
     },
     SELECT_MOVIE: function (state, movie) {
       state.movie = movie
+    },
+    CREATE_USERNAME: function (state, username) {
+      state.username = username
     }
   },
   actions: {
@@ -71,6 +75,9 @@ export default new Vuex.Store({
         .catch(err => {
           console.log(err)
         })
+    },
+    createUsername: function ( { commit }, username){
+      commit('CREATE_USERNAME', username)
     }
   },
   // getters: {
