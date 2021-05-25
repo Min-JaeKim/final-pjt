@@ -21,10 +21,12 @@
       background="purple"
     >
       <Slide
+        id="slide"
         v-for="(movie, idx2) in list"
         :key=idx2
         :movieId="movie.movie_id"
-        id="slide"
+        @hovered="hovered"
+        :style="width"
       />
     </b-carousel-slide>
   </b-carousel>
@@ -50,12 +52,11 @@ export default {
   },
   methods: {
     prev() {
-      console.log('hi')
       this.$refs.myCarousel.prev()
     },
     next() {
       this.$refs.myCarousel.next()
-    }
+    },
   }
 }
 </script>
@@ -82,6 +83,6 @@ export default {
     width: 19%;
     height: 100%;
     display: inline-block;
-    top: 18%;
+    /* top: 18%; */
   }
 </style>
