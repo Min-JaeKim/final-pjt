@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="list">
     <MovieList
       v-for="(movieList, idx) in movieList"
       :key="idx"
@@ -23,3 +23,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  #list {
+    height: 2400px;
+  }
+</style>
