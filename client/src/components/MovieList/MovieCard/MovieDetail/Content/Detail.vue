@@ -1,7 +1,7 @@
 <template>
   <div>
     <input type="text" v-model="reviewContent" @keyup.enter="createReview">
-    <button @click="createReview"></button>
+    <button @click="createReview">리뷰작성</button>
   </div>
 </template>
 

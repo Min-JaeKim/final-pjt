@@ -1,13 +1,19 @@
 <template>
   <div id="carousel">
     <h4 id="title">{{ movieList[0].description }}</h4>
-    <Carousel :carousel="carousel" id="carousel-list"/>
+    <Carousel :carousel="carousel" id="carousel-list" :listId="listId"/>
 
     <!-- <MovieCard 
       v-for="(movie, idx) in movieList"
       :key="idx"
       :movieId="movie.movie_id"
     /> -->
+    <div>      
+      <Content
+        id="content"
+        v-if=" this.$store.state.isClicked && this.$store.state.listId == listId"
+      />
+    </div>
     <div id="blank"></div>
   </div>
 </template>
@@ -15,17 +21,23 @@
 <script>
 // import MovieCard from '@/components/MovieList/MovieCard'
 import Carousel from '@/components/MovieList/Carousel'
+import Content from '@/components/MovieList/MovieCard/MovieDetail/Content'
+
 
 export default {
   name: 'MovieList',
   props: {
     movieList: {
       type: Array,
+    },
+    listId: {
+      type: Number
     }
   },
   components: {
     // MovieCard,
     Carousel,
+    Content,
   },
   computed: {
     carousel: function () {
@@ -62,5 +74,9 @@ export default {
   #blank {
     width: 100%;
     height: 10%;
+  }
+  #content {
+    height: 800px;
+    background-color: #39343a;
   }
 </style>

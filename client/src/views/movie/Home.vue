@@ -4,6 +4,7 @@
       v-for="(movieList, idx) in movieList"
       :key="idx"
       :movieList="movieList"
+      :listId="idx"
     />
   </div>
 </template>
