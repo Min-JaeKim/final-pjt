@@ -5,7 +5,7 @@
       <p>{{ movie.overview }}</p>
       <button @click="likeMovie" v-if="liked">좋아요 취소</button>
       <button @click="likeMovie" v-else>좋아요</button>
-      <b-form-rating v-model="value" color="indigo" class="mb-2">
+      <b-form-rating v-model="value" color="indigo" class="mb-2" @change="onClick">
         <button></button>
       </b-form-rating>
     </div>
@@ -22,15 +22,15 @@ export default {
     return {
       liked: null,
       value: null,
+      token: this.$store.state.setToken()
     }
   },
   methods: {
     likeMovie: function () {
-      const token = this.$store.state.setToken()
       axios({
         method: 'post',
         url: `http://127.0.0.1:8000/movies/${this.movie.movie_id}/likes/`,
-        headers: token,
+        headers: this.token,
       })
       .then(res => {
         this.liked = res.data.liked
@@ -38,12 +38,33 @@ export default {
       .catch(err => {
         console.log(err)
       })
+    },
+    onClick: function () {
+        const value = {
+          rate: this.value
+        }
+        console.log(value)
+        axios({
+          method: 'post',
+          url: `http://127.0.0.1:8000/movies/${this.movie.movie_id}/rating/`,
+          data: value,
+          headers: this.token
+        })
+          .then(res => {
+            console.log(res)
+          })
+          .catch(err => {
+            console.log(err)
+          })
     }
   },
   computed: {
     movie: function () {
       return this.$store.state.movie
-    }
+    },
+    username: function () {
+      return this.$store.state.username
+    },
   }
 }
 </script>

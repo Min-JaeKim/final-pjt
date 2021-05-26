@@ -91,7 +91,7 @@ def review_create(request, movie_id):
     serializer = CommentSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
         serializer.save(movie=movie, user=request.user)
-        return Response(status=status.HTTP_201_CREATED)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
     return Response(status=status.HTTP_401_UNAUTHORIZED)
 
 
@@ -128,7 +128,7 @@ def reply_create(request, movie_id, comment_pk):
     serializer = ReplySerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
         serializer.save(comment=comment, user=request.user)
-        return Response(status=status.HTTP_201_CREATED)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
     return Response(status=status.HTTP_401_UNAUTHORIZED)
 
 
@@ -137,7 +137,7 @@ def reply_create(request, movie_id, comment_pk):
 @permission_classes([IsAuthenticated])
 def reply_update_delete(request, movie_id, comment_pk, reply_pk):
     reply = get_object_or_404(Reply, pk=reply_pk)
-    if not request.user.todos.filter(pk=reply_pk).exists():
+    if not request.user.reply_set.filter(pk=reply_pk).exists():
         return Response({ 'detail' : '권한이 없습니다'}, status=status.HTTP_403_FORBIDDEN)
     if request.method == 'PUT':
         serializer = ReplySerializer(Reply, data=request.data)
@@ -150,23 +150,24 @@ def reply_update_delete(request, movie_id, comment_pk, reply_pk):
         return Response({ 'id': reply_pk })
 
 
-# @api_view(['POST'])
-# @authentication_classes([JSONWebTokenAuthentication])
-# @permission_classes([IsAuthenticated])
-# def movie_rate(request, movie_id, username):
-#     if request.user.todos.filter(pk=reply_pk).exists():
-#     # 그런데 내가 지금 index.js의 movie 배열에 뭐가 들어오는지 확인을 못했다.
-#     # movie = get_object_or_404(Movie, movie_id=request.data.movie.movie_id)
-#     # 만약 movie 객체가 다 들어온다면
-#     movie = request.data.movie
-#     user = get_user_model().objects.get(username=username)
-#     serializers = RatingSerializer(data=request.data.rate)
-#     if serializers.is_valid():
-#         # foreign key 라 객체 전부를..
-#         serializers.save(movie=movie, user=user)
-#         # 어차피 index.js에 모두 정의되어 있으므로 data를 따로 보내줄 필요는 없겠군요
-#         return Response(status=status.HTTP_201_CREATED)
-#     return Response(status=status.HTTP_400_BAD_REQUEST)
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def movie_rate(request, movie_id):
+    movie = get_object_or_404(Movie, movie_id=movie_id)
+    if Rating.objects.filter(movie_id=movie.pk, user_id=request.user.pk).exists():
+        rating = get_object_or_404(Rating, pk=Rating.objects.filter(movie_id=movie.pk, user_id=request.user.pk).values('id')[0].get('id'))
+        serializer = RatingSerializer(rating, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(status=status.HTTP_200_OK)
+
+    else:
+        serializers = RatingSerializer(data=request.data)
+        if serializers.is_valid():
+            serializers.save(movie=movie, user=request.user)
+            return Response(status=status.HTTP_201_CREATED)
+        return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
 
