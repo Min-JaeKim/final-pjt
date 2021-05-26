@@ -28,6 +28,8 @@ export default new Vuex.Store({
     },
     username: null,
     user_rate: [],
+    listId: null,
+    isClicked: null
   },
   mutations: {
     LOAD_DATA: function (state, data) {

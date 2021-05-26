@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ movie.title }}</h1>
-    <img :src="`https://image.tmdb.org/t/p/w200/${movie.poster_path}`" :alt="movie.title">
+    <img :src="`https://image.tmdb.org/t/p/w200/${movie.poster_path}`" :alt="movie.title" style="object-fit: none; width: 35%;">
     <Basic/>
     <Detail :movie-id="movie.movie_id"/>
     <Rec/>

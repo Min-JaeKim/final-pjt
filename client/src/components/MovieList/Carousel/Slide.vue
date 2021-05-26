@@ -6,26 +6,29 @@
         :alt="`${movie.title}`"
       >
       <b-button v-if="isViewed" v-b-toggle.my-collapse @click="onClick">Toggle Collapse</b-button>
-      <!-- <b-collapse id="my-collapse">
-        <b-card title="Collapsible card" :style="card">
-        </b-card>
-      </b-collapse> -->
-      <Content v-if="isClicked"/>
+      <!-- <Content v-if="isClicked"/> -->
     </div>
   </div>
 </template>
 
 <script>
-import Content from '@/components/MovieList/MovieCard/MovieDetail/Content'
+// import Content from '@/components/MovieList/MovieCard/MovieDetail/Content'
 
 export default {
   nmae: 'Slide',
   props: {
-    movieId: Number,
-    top: null,
+    movieId: {
+      type: Number,
+    },
+    top: {
+      type: null,
+    },
+    listId: {
+      type: Number,
+    }
   },
   components: {
-    Content
+    // Content
   },
   data: function () {
     return {
@@ -52,6 +55,8 @@ export default {
     },
     onClick() {
       this.isClicked = !this.isClicked
+      this.$store.state.isClicked = !this.$store.state.isClicked
+      this.$store.state.listId = this.listId
       if (this.isClicked) {
         this.card = "position: absolute; width:500px; height:800px; z-index: 3;"
       } else {

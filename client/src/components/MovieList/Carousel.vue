@@ -2,7 +2,7 @@
   <b-carousel
     ref="myCarousel"
     id="carousel-1"
-    :interval="100000"
+    :interval="1000000"
     background="#ababab"
     style="text-shadow: 1px 1px 2px #333;"
   >
@@ -25,8 +25,7 @@
         v-for="(movie, idx2) in list"
         :key=idx2
         :movieId="movie.movie_id"
-        @hovered="hovered"
-        :style="width"
+        :listId="listId"
       />
     </b-carousel-slide>
   </b-carousel>
@@ -48,6 +47,9 @@ export default {
   props: {
     carousel: {
       type: Array
+    },
+    listId: {
+      type: Number,
     }
   },
   methods: {
