@@ -13,8 +13,9 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name="Review",
+  name: "Review",
   props: {
     // 이거 꼭 detail에서 props 시켜 주나 확인할 것.
     movieId: {
