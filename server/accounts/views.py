@@ -41,7 +41,6 @@ def signup(request):
 @permission_classes([IsAuthenticated])
 def profile(request):
     like_movies = []
-    # 여기는 돌려보지 못했다. request로 현재 유저 이름 데이터를 보내줘야 한다.
     person = get_object_or_404(get_user_model(), username=request.data.get('username'))
     tmp = person.like_movies.all()
     for lm in tmp:

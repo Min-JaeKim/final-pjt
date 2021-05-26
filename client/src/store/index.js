@@ -27,6 +27,7 @@ export default new Vuex.Store({
       return config
     },
     username: null,
+    user_rate: [],
   },
   mutations: {
     LOAD_DATA: function (state, data) {
@@ -40,6 +41,10 @@ export default new Vuex.Store({
     },
     CREATE_USERNAME: function (state, username) {
       state.username = username
+    },
+    // 여기는 data값이 뭐가 들어올 지 모르기 때문에 내가 수정해줘야함.
+    CREATE_RATE: function (state, data){
+      state.user_rate.push(data)
     }
   },
   actions: {
@@ -78,7 +83,25 @@ export default new Vuex.Store({
     },
     createUsername: function ( { commit }, username){
       commit('CREATE_USERNAME', username)
-    }
+    },
+    createRate: function ( { commit }, rate ){
+      // this.$store.state -> this로 바뀔 수 있는지 추후 확인하기.
+      axios ({
+        method: 'post',
+        url: `http://127.0.0.1:8000/movies/${this.$store.state.username}/rating/`,
+        data: {
+          'rate': rate,
+          'movie': this.$store.state.movie,
+        },
+        headers: this.$store.state.setToken,
+      })
+        .then(res => {
+          commit('CREATE_RATE', res.data)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    },
   },
   // getters: {
   //   isModal: function (state) {

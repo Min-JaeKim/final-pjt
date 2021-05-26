@@ -112,6 +112,13 @@ def review_update_delete(request):
     pass
 
 
+# @api_view(['POST'])
+# @authentication_classes([JSONWebTokenAuthentication])
+# @permission_classes([IsAuthenticated])
+# def movie_rate(request, username):
+#     movie = get_object_or_404(Movie, movie_id=requ)
+
+
 # movie db입니다.
 # def tmp(request):
 #     dic = {}
