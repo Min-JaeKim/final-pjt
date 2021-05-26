@@ -44,16 +44,15 @@ export default {
     },
     hoverHandler(isHovered) {
       if (isHovered) {
-        this.isViewed = isHovered
-        this.selectMovie()
+        this.isViewed = isHovered        
         this.width = "width: 326px"
-        console.log(isHovered)
       } else {
         this.isViewed = false
         this.width = "width: 19%"
       }
     },
     onClick() {
+      this.selectMovie()
       this.isClicked = !this.isClicked
       this.$store.state.isClicked = !this.$store.state.isClicked
       this.$store.state.listId = this.listId

@@ -9,9 +9,7 @@
         <button></button>
       </b-form-rating>
     </div>
-    <div class="right">
-      <!-- <img class="basic_layered"> -->
-      <img class="basic" :src="`https://image.tmdb.org/t/p/w200/${movie.poster_path}`" :alt="movie.title">
+    <div class="right" :style="`background: linear-gradient(to left, transparent, black), url('https://image.tmdb.org/t/p/w200/${movie.poster_path}'); background-size: 100% auto;`">
     </div>
   </div>
 </template>
@@ -50,7 +48,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .left {
     position: absolute;
     display: inline-block;
@@ -64,9 +62,5 @@ export default {
     left: 50%;
     width: 50%;
     height: 720px;
-  }
-  img.basic {
-    height: 720px; 
-    object-fit: cover;
   }
 </style>
