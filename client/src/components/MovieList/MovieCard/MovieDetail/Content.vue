@@ -1,14 +1,14 @@
 <template>
   <div>
     <div style="height:90%">
-      <Basic/>
-      <Detail :movie-id="movie.movie_id"/>
-      <Rec/>
+      <Basic v-if="isBasic" style="height:100%"/>
+      <Detail v-if="isDetail" :movie-id="movie.movie_id" style="height:100%"/>
+      <Rec v-if="isRec" style="height:100%"/>
     </div>
     <div style="height:10%">
-      <button v-if="isBasic" @click="onBasic">기본정보</button>
-      <button v-if="isDetail" @click="onDetail">상세정보</button>
-      <button v-if="isRec" @click="onRec">비슷한 영화</button>
+      <button @click="onBasic">기본정보</button>
+      <button @click="onDetail">상세정보</button>
+      <button @click="onRec">비슷한 영화</button>
     </div>
   </div>
 </template>

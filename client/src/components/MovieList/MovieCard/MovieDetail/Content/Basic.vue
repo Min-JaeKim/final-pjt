@@ -1,14 +1,18 @@
 <template>
   <div>
     <div class="left">
-
+      <h3>{{ movie.title }}</h3>
+      <p>{{ movie.overview }}</p>
+      <button @click="likeMovie" v-if="liked">좋아요 취소</button>
+      <button @click="likeMovie" v-else>좋아요</button>
+      <b-form-rating v-model="value" color="indigo" class="mb-2">
+        <button></button>
+      </b-form-rating>
     </div>
     <div class="right">
-      <img :src="`https://image.tmdb.org/t/p/w200/${movie.poster_path}`" :alt="movie.title" style="object-fit: none; width: 35%;">
+      <!-- <img class="basic_layered"> -->
+      <img class="basic" :src="`https://image.tmdb.org/t/p/w200/${movie.poster_path}`" :alt="movie.title">
     </div>
-    <p>{{ movie.overview }}</p>
-    <button @click="likeMovie" v-if="liked">좋아요 취소</button>
-    <button @click="likeMovie" v-else>좋아요</button>
   </div>
 </template>
 
@@ -19,6 +23,7 @@ export default {
   data: function () {
     return {
       liked: null,
+      value: null,
     }
   },
   methods: {
@@ -47,18 +52,21 @@ export default {
 
 <style>
   .left {
+    position: absolute;
     display: inline-block;
+    right: 50%;
     width: 50%;
-    height: 100%;
+    height: 720px;
   }
   .right {
+    position: absolute;
     display: inline-block;
+    left: 50%;
     width: 50%;
-    height: 100%;
+    height: 720px;
   }
-  img {
-    object-fit: cover; 
-    position: relative; 
-    background: linear-gradient(to right, black, white);
+  img.basic {
+    height: 720px; 
+    object-fit: cover;
   }
 </style>
