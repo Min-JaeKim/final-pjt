@@ -1,7 +1,7 @@
 <template>
   <div id="carousel">
     <h4 id="title">{{ movieList[0].description }}</h4>
-    <Carousel :carousel="carousel" id="carousel-list" :listId="listId"/>
+    <Carousel :carousel="carousel" id="carousel-list" :listId="listId" style="position: relative;"/>
 
     <!-- <MovieCard 
       v-for="(movie, idx) in movieList"
@@ -12,6 +12,7 @@
       <Content
         id="content"
         v-if=" this.$store.state.isClicked && this.$store.state.listId == listId"
+        style="position: relative; z-index: 2; transition: z-index 0.5s"
       />
     </div>
     <div id="blank"></div>
@@ -78,5 +79,6 @@ export default {
   #content {
     height: 800px;
     background-color: #39343a;
+    z-index: 0;
   }
 </style>

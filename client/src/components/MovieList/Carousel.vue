@@ -7,10 +7,10 @@
     style="text-shadow: 1px 1px 2px #333;"
   >
 
-    <a href="#" role="button" aria-controls="carousel-1___BV_inner_" class="carousel-control-prev" @click="prev">
+    <a href="#" role="button" aria-controls="carousel-1___BV_inner_" class="carousel-control-prev" style="width: 5%;" @click="prev">
       <span aria-hidden="true" class="carousel-control-prev-icon"></span>
     </a>
-    <a href="#" role="button" aria-controls="carousel-1___BV_inner_" class="carousel-control-next" @click="next">
+    <a href="#" role="button" aria-controls="carousel-1___BV_inner_" class="carousel-control-next" style="width: 5%;" @click="next">
       <span aria-hidden="true" class="carousel-control-next-icon"></span>
     </a>
     
