@@ -1,6 +1,6 @@
 from django.urls.conf import include
 from rest_framework import serializers
-from .models import Movie, Comment, Rating, Favorite, MovieList
+from .models import Movie, Comment, Rating, Favorite, MovieList, Reply
 
 
 class MovieListSerializer(serializers.ModelSerializer):
@@ -16,11 +16,18 @@ class MovieSerializer(serializers.ModelSerializer):
         fields = ('movie_id', 'title', 'genre', 'release_date', 'overview', 'tagline', 'trailer', 'backdrop_path', 'poster_path', 'vote_average')
 
 
-class CommentListSerializer(serializers.ModelSerializer):
+class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Comment
-        fields = ('content',)
+        fields = ('content', 'created_at')
+
+
+class ReplySerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Reply
+        fields = ('content', 'created_at')
 
 
 class RatingSerializer(serializers.ModelSerializer):
