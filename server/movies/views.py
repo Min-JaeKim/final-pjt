@@ -14,11 +14,11 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 
 from .serializers import (
-    MovieSerializer, 
-    CommentListSerializer, 
+    MovieSerializer,
     RatingSerializer, 
-    FavoriteSerializer, 
-    MovieListSerializer)
+    MovieListSerializer,
+    CommentSerializer,
+    ReplySerializer)
 from .models import Movie, Comment, MovieList, Rating, Favorite
 
 
@@ -82,7 +82,7 @@ def review_list(request, movie_id):
     if len(Comment.objects.filter(movie=movie)):
         comments = get_list_or_404(Comment, movie=movie)
         print(comments)
-        serializer = CommentListSerializer(comments, many=True)
+        serializer = CommentSerializer(comments, many=True)
         data = {
             'content': serializer.data.get('content'),
             'username': request.user.username
@@ -98,7 +98,7 @@ def review_create(request, movie_id):
     movie = get_object_or_404(Movie, movie_id=movie_id)
     # ㅇㅣ게 되려남 ;ㅅ;
     user = get_user_model().objects.get(username=request.user.username)
-    serializer = CommentListSerializer(data=request.data)
+    serializer = CommentSerializer(data=request.data)
     if serializer.is_valid():
         serializer.save(movie=movie, user=user)
         data = {
@@ -109,8 +109,49 @@ def review_create(request, movie_id):
     return Response(status=status.HTTP_401_UNAUTHORIZED)
 
 
-@api_view(['PUT', 'DELETE'])
-def review_update_delete(request):
+# @api_view(['PUT', 'DELETE'])
+# @authentication_classes([JSONWebTokenAuthentication])
+# @permission_classes([IsAuthenticated])
+# def review_update_delete(request):
+#     todo = get_object_or_404(Todo, pk=todo_pk)
+#     if not request.user.todos.filter(pk=todo_pk).exists():
+#         return Response({ 'detail' : '권한이 없습니다'}, status=status.HTTP_403_FORBIDDEN)
+#     if request.method == 'PUT':
+#         serializer = TodoSerializer(todo, data=request.data)
+#         if serializer.is_valid(raise_exception=True):
+#             serializer.save()
+#             return Response(serializer.data)
+
+#     elif request.method == 'DELETE':
+#         todo.delete()
+#         return Response({ 'id': todo_pk })
+
+
+@api_view(['GET'])
+def reply_list(request, movie_id, comment_id):
+    comment = get_object_or_404(Comment, pk=comment_id)
+    reply = comment.reply_set.all()
+    # 이게 잘 작동이 되는 지 꼭 확인해 볼 것.
+    # serializer = TodoSerializer(request.user.todos, many=True)
+    return Response(reply, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def reply_create(request, movie_id, comment_id):
+    # # print(request)
+    # if request.method == 'GET':
+
+    # elif request.method == 'POST':
+    #     serializer = TodoSerializer(data=request.data)
+    #     if serializer.is_valid(raise_exception=True):
+    #         serializer.save(user=request.user)
+    #         return Response(serializer.data, status=status.HTTP_201_CREATED)
+    pass
+
+
+def reply_update_delete(request):
     pass
 
 
