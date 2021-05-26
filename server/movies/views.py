@@ -94,7 +94,9 @@ def review_list(request, movie_id):
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def review_create(request, movie_id):
+    # 여긴 또 movie_id 썼네,,
     movie = get_object_or_404(Movie, movie_id=movie_id)
+    # ㅇㅣ게 되려남 ;ㅅ;
     user = get_user_model().objects.get(username=request.user.username)
     serializer = CommentListSerializer(data=request.data)
     if serializer.is_valid():
@@ -112,11 +114,24 @@ def review_update_delete(request):
     pass
 
 
-# @api_view(['POST'])
-# @authentication_classes([JSONWebTokenAuthentication])
-# @permission_classes([IsAuthenticated])
-# def movie_rate(request, username):
-#     movie = get_object_or_404(Movie, movie_id=requ)
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def movie_rate(request, username):
+    # 그런데 내가 지금 index.js의 movie 배열에 뭐가 들어오는지 확인을 못했다.
+    # movie = get_object_or_404(Movie, movie_id=request.data.movie.movie_id)
+    # 만약 movie 객체가 다 들어온다면
+    movie = request.data.movie
+    user = get_user_model().objects.get(username=username)
+    serializers = RatingSerializer(data=request.data.rate)
+    if serializers.is_valid():
+        # foreign key 라 객체 전부를..
+        serializers.save(movie=movie, user=user)
+        # 어차피 index.js에 모두 정의되어 있으므로 data를 따로 보내줄 필요는 없겠군요
+        return Response(status=status.HTTP_201_CREATED)
+    return Response(status=status.HTTP_400_BAD_REQUEST)
+
+
 
 
 # movie db입니다.
