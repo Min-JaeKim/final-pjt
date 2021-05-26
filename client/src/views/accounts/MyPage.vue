@@ -2,7 +2,7 @@
   <div>
     <h1 class="title">MyPage</h1>
     <div id="app">
-        <h1>value</h1>
+        <h1>선호하는 영화 장르</h1>
         <wordcloud
         :data="defaultWords"
         nameKey="name"
@@ -11,6 +11,9 @@
         :showTooltip="true"
         :wordClick="wordClickHandler">
         </wordcloud>
+    </div>
+    <div>
+
     </div>
   </div>
 </template>
@@ -158,17 +161,8 @@ export default {
               }
             }
           }
-          const tmpwc = []
-          for (var word_cnt2 = 0; word_cnt2 < this.defaultWords.length; word_cnt2++){
-            if (this.defaultWords[word_cnt2].value > 0){
-              tmpwc.push({
-                "name": this.defaultWords[word_cnt2].name,
-                "num": this.defaultWords[word_cnt2].num,
-                "value": this.defaultWords[word_cnt2].value,
-              })
-            }
-          }
-          this.defaultWords = tmpwc
+          this.defaultWords = this.defaultWords.filter(defaultWord => defaultWord.value > 0)
+          console.log(this.defaultWords)
         })
         .catch(err => {
           console.log(err)

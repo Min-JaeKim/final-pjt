@@ -9,5 +9,6 @@ urlpatterns = [
     path('<int:movie_id>/review_list/', views.review_list),
     path('<int:movie_id>/review_create/', views.review_create),
     path('<int:movie_id>/review/', views.review_update_delete),
+    # path('<username>/rating/', views.movie_rate),
     # path('tmp/', views.tmp),
 ]
