@@ -51,7 +51,7 @@ export default new Vuex.Store({
     },
     CREATE_FAV_GENRE: function (state, data){
       state.favoratieGenre = data
-    }
+    },
   },
   actions: {
     selectMovie: function ( { commit }, movie) {
@@ -110,7 +110,7 @@ export default new Vuex.Store({
     },
     createFavGenre: function ( { commit }, data) {
       commit('CREATE_FAV_GENRE', data)
-    }
+    },
   },
   // getters: {
   //   isModal: function (state) {

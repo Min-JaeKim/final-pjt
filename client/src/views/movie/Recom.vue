@@ -2,8 +2,8 @@
   <div>
     <h2 class="title"><span class="username">“{{ this.$store.state.username }}”</span>님을 위한 랜덤 추천작</h2>
     <br><br>
-    <span v-if="select">
-      <button @click="randomMovie">Pick!</button>
+      <button v-if="select.length" @click="randomMovie">Pick!</button>
+    <span v-else>찜한 영화가 없습니다.</span>
       <div v-if="clicked">
         <br>
         <h2><p>추천 영화 : {{ recMovie.title }}</p></h2>
@@ -11,8 +11,6 @@
         <br><br>
         <p class="overview">줄거리 : {{ recMovie.overview }}</p>
       </div>
-    </span>
-    <span v-else>찜한 영화가 없거나 너무 적습니다.</span>
   </div>
 </template>
 
