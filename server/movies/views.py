@@ -88,6 +88,7 @@ def review_list(request, movie_id):
 @permission_classes([IsAuthenticated])
 def review_create(request, movie_id):
     movie = get_object_or_404(Movie, movie_id=movie_id)
+    request.data['username'] = request.user.username
     serializer = CommentSerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
         serializer.save(movie=movie, user=request.user)
@@ -98,16 +99,16 @@ def review_create(request, movie_id):
 @api_view(['PUT', 'DELETE'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def review_update_delete(request, movie_id, comment_pk):
+def review_update_delete(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
-    if not request.user.todos.filter(pk=comment_pk).exists():
+    if not request.user.comment_set.filter(pk=comment_pk).exists():
         return Response({ 'detail' : '권한이 없습니다'}, status=status.HTTP_403_FORBIDDEN)
     if request.method == 'PUT':
-        serializer = CommentSerializer(Comment, data=request.data)
+        print(request.data)
+        serializer = CommentSerializer(comment, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
-
     elif request.method == 'DELETE':
         comment.delete()
         return Response({ 'id': comment_pk })
