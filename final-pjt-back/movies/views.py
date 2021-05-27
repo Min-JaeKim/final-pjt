@@ -79,8 +79,8 @@ def likes(request, movie_id):
 @api_view(['GET'])
 def review_list(request, movie_id):
     movie = get_object_or_404(Movie, movie_id=movie_id)
-    serializers = CommentSerializer(movie.comment_set, many=True)
-    return Response(serializers.data, status=status.HTTP_200_OK)
+    serializer = CommentSerializer(movie.comment_set, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
     
 
 @api_view(['POST'])
@@ -104,7 +104,6 @@ def review_update_delete(request, comment_pk):
     if not request.user.comment_set.filter(pk=comment_pk).exists():
         return Response({ 'detail' : '권한이 없습니다'}, status=status.HTTP_403_FORBIDDEN)
     if request.method == 'PUT':
-        print(request.data)
         serializer = CommentSerializer(comment, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
@@ -169,6 +168,24 @@ def movie_rate(request, movie_id):
             serializers.save(movie=movie, user=request.user)
             return Response(status=status.HTTP_201_CREATED)
         return Response(status=status.HTTP_400_BAD_REQUEST)
+
+
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+def review_user(request):
+    data = {
+        'user_id': request.user.id
+    }
+    return Response(data, status=status.HTTP_200_OK)
+
+
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+def reply_user(request):
+    data = {
+        'user_id': request.user.id
+    }
+    return Response(data, status=status.HTTP_200_OK)
 
 
 

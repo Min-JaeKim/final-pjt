@@ -13,5 +13,7 @@ urlpatterns = [
     path('reviews/<int:comment_pk>/reply_create/', views.reply_create),
     path('replies/<int:reply_pk>/', views.reply_update_delete),
     path('<int:movie_id>/rating/', views.movie_rate),
+    path('review_user/', views.review_user),
+    path('reply_user/', views.reply_user),
     # path('tmp/', views.tmp),
 ]
