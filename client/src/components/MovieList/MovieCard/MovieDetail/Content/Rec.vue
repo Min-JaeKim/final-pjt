@@ -10,7 +10,7 @@
     </div>
     <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w200/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
     </div>
-    <div class="reclist d-flex justify-content-around">
+    <div class="reclist">
       <RecListItem 
         v-for="(item, idx) in recList"
         :key=idx
@@ -72,5 +72,6 @@ export default {
   .reclist {
     position: relative;
     top: 300px;
+    height: 420px;
   }
 </style>

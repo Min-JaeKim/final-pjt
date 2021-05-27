@@ -1,13 +1,24 @@
 <template>
   <div>
-    <input type="text" v-model="reviewContent" @keyup.enter="createReview">
-    <button @click="createReview">리뷰작성</button>
-    <br>
-    <DetailItem
-    v-for="(review, idx) in reviews" 
-    :key="idx"
-    :review="review"
-    />
+    <div class="left">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>Review</h1>
+      <input type="text" v-model="reviewContent" @keyup.enter="createReview">
+      <button @click="createReview">리뷰작성</button>
+    </div>
+    <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w500/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
+    </div>
+    <div class="detail-list d-flex flex-wrap justify-content-around">
+      <DetailItem
+        v-for="(review, idx) in reviews" 
+        :key="idx"
+        :review="review"
+      />
+    </div>
   </div>
 </template>
 
@@ -57,10 +68,16 @@ export default {
       })
         .then(res => {
           console.log(res)
+          this.reviews = this.getReviews()
         })
         .catch(err => {
           console.log(err)
         })
+    },
+  },
+  computed: {
+    movie: function () {
+      return this.$store.state.movie
     },
   },
   created: function () {
@@ -69,6 +86,28 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .left {
+    position: absolute;
+    display: inline-block;
+    right: 70%;
+    width: 30%;
+    height: 300px;
+    z-index: 1;
+  }
+  .right {
+    position: absolute;
+    display: inline-block;
+    left: 0%;
+    width: 100%;
+    height: 300px;
+  }
+  .detail-list {
+    position: relative;
+    top: 330px;
+    width: 94%;
+    height: 350px;
+    left: 3%;
+    right: 3%;
+}
 </style>
