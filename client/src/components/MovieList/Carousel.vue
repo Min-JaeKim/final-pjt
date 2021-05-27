@@ -16,9 +16,8 @@
     
     <b-carousel-slide
       v-for="(list, idx) in carousel"
-      :key=idx
+      :key="idx"
       style="width: 100%; height: 100%; margin-right: 0%"
-      background="purple"
     >
       <Slide
         id="slide"

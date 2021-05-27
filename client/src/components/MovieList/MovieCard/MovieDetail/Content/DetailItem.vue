@@ -8,14 +8,14 @@
     <hr>
     <button @click="doChange">수정</button>
     <div v-if="change">
-      <input type="text" @keyup.enter="updateReview(review)" v-model="content">
+      <input type="text" @keyup.enter="updateReview(review)" v-model.trim="content">
     </div>
     <button @click="deleteReview(review)">삭제</button>
     <div>
       <b-button v-b-toggle.sidebar-variant>댓글보기</b-button>
       <b-sidebar id="sidebar-variant" title="댓글" bg-variant="dark" text-variant="light" shadow>
         <div class="px-3 py-2">
-          <input type="text" v-model="replyContent" @keyup.enter="createReply">
+          <input type="text" v-model.trim="replyContent" @keyup.enter="createReply">
           <button @click="createReply">댓글작성</button>
           <hr>
           <br>
@@ -49,7 +49,7 @@ export default {
   data: function () {
     return {
       change: false,
-      content: '',
+      content: this.review.content,
       replies: [],
       replyContent: null,
     }
@@ -79,6 +79,7 @@ export default {
       })
         .then(res => {
           console.log(res)
+          this.replyContent = ''
           this.replies = this.getReplies()
         })
         .catch(err => {
