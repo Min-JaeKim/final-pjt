@@ -3,7 +3,14 @@
     <br>
     <br>
     <h3 class="title">{{item.title}}</h3>
-    <img :src="`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`" :alt="item.title" style="object-fit: cover">
+    <div v-if="item.backdrop_path">
+      <img :src="`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`" :alt="item.title" style="object-fit: cover">
+    </div>
+    <div v-else>
+      <br>
+      <p>이런 아직 사진이 없네요,,,</p>
+      <p>다음에 준비해볼게요!</p>
+    </div>
     <!-- <iframe src="" frameborder="0"></iframe> -->
   </div>
 </template>
