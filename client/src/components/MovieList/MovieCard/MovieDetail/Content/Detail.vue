@@ -7,6 +7,7 @@
       <br>
       <br>
       <h1>Review</h1>
+      <br>
       <input type="text" v-model="reviewContent" @keyup.enter="createReview">
       <button @click="createReview">리뷰작성</button>
     </div>
@@ -17,6 +18,7 @@
         v-for="(review, idx) in reviews" 
         :key="idx"
         :review="review"
+        @review-change="reviewChange"
       />
     </div>
   </div>
@@ -49,7 +51,6 @@ export default {
       })
         .then((res) => {
           this.reviews = res.data
-          console.log(this.reviews)
         })
         .catch((err) => {
           console.log(err)
@@ -74,6 +75,9 @@ export default {
           console.log(err)
         })
     },
+    reviewChange: function () {
+      this.reviews = this.getReviews()
+    }
   },
   computed: {
     movie: function () {
