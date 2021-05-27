@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="left">
+    <div class="left" style="background-color: transparent">
       <br>
       <br>
       <br>
       <br>
       <br>
-      <h1 class="title">이런 영화는 어때요?</h1>
+      <p class="title">이런 영화는 어때요?</p>
     </div>
-    <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w200/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
+    <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
     </div>
     <div class="reclist">
       <RecListItem 
@@ -57,13 +57,16 @@ export default {
 <style scoped>
   .title {
     color: white;
+    font-size: 2.5rem;
   }
   .left {
     position: absolute;
     display: inline-block;
-    right: 70%;
-    width: 30%;
+    right: 0%;
+    width: 100%;
     height: 300px;
+    z-index: 1;
+    text-align: center;
   }
   .right {
     position: absolute;

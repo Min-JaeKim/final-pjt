@@ -5,10 +5,10 @@
       <Detail v-if="isDetail" :movie-id="movie.movie_id" style="height:100%"/>
       <Rec v-if="isRec" style="height:100%"/>
     </div>
-    <div style="height:10%">
-      <button @click="onBasic">기본정보</button>
-      <button @click="onDetail">상세정보</button>
-      <button @click="onRec">비슷한 영화</button>
+    <div style="height:10%" class="d-flex justify-content-around align-items-center">
+      <button class="btn" style="color: black" @click="onBasic">기본정보</button>
+      <button class="btn" style="color: black" @click="onDetail">상세정보</button>
+      <button class="btn" style="color: black" @click="onRec">비슷한 영화</button>
     </div>
   </div>
 </template>

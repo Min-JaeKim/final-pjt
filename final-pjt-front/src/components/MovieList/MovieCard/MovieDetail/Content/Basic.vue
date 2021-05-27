@@ -19,8 +19,10 @@
         <p style="color: white; text-align: left">{{ movie.overview }}</p>
         <br><br>
         <div v-if="this.$store.state.username">
-          <h3>몇 점 주실래요?</h3>
           <br>
+          <br>
+          <h3>몇 점 주실래요?</h3>
+          <br><br><br>
           <b-form-rating v-model="value" color="indigo" class="mb-2" @change="onClick">
           <button></button>
           </b-form-rating>        

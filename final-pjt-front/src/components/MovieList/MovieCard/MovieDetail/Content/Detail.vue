@@ -1,17 +1,18 @@
 <template>
   <div>
-    <div class="left">
+    <div class="left d-flex justify-content-center card" style="background-color: transparent">
       <br>
       <br>
+      <div style="position: absolute; left: 50px;">
+        <p style="font-size: 3rem">Review</p>
+      </div>
       <br>
-      <br>
-      <br>
-      <h1>Review</h1>
-      <br>
-      <input type="text" v-model.trim="reviewContent" @keyup.enter="createReview">
-      <button @click="createReview">리뷰작성</button>
+      <div>
+      <input style="position: absolute; left: 50px;" type="text" v-model.trim="reviewContent" @keyup.enter="createReview">
+      <button class="btn" style="color: white; position: absolute; left: 270px;" @click="createReview">리뷰작성</button>
+      </div>
     </div>
-    <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w500/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
+    <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
     </div>
     <div class="detail-list d-flex flex-wrap justify-content-around">
       <DetailItem
