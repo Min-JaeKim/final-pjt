@@ -7,7 +7,7 @@
     </div>
     <div style="height:10%">
       <button @click="onBasic">기본정보</button>
-      <button @click="onDetail">상세정보</button>
+      <button @click="onDetail" v-if="this.$store.state.username">상세정보</button>
       <button @click="onRec">비슷한 영화</button>
     </div>
   </div>

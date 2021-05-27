@@ -3,13 +3,15 @@
     <div class="left">
       <h3>{{ movie.title }}</h3>
       <p>{{ movie.overview }}</p>
-      <button @click="likeMovie" v-if="liked">좋아요 취소</button>
-      <button @click="likeMovie" v-else>좋아요</button>
+      <div v-if="this.$store.state.username">
+        <font-awesome-icon :icon="['fas','heart']" @click="likeMovie" v-if="liked" />
+        <font-awesome-icon :icon="['far','heart']" @click="likeMovie" v-else/>
       <b-form-rating v-model="value" color="indigo" class="mb-2" @change="onClick">
         <button></button>
       </b-form-rating>
+      </div>
     </div>
-    <div class="right" :style="`background: linear-gradient(to left, transparent, black), url('https://image.tmdb.org/t/p/w200/${movie.poster_path}'); background-size: 100% auto;`">
+    <div class="right" :style="`background: linear-gradient(to left, transparent, black), url('https://image.tmdb.org/t/p/w1280/${movie.poster_path}'); background-size: 100% auto;`">
     </div>
   </div>
 </template>

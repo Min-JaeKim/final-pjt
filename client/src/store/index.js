@@ -29,7 +29,8 @@ export default new Vuex.Store({
     username: null,
     user_rate: [],
     listId: null,
-    isClicked: null
+    isClicked: null,
+    favoratieGenre: null,
   },
   mutations: {
     LOAD_DATA: function (state, data) {
@@ -47,6 +48,9 @@ export default new Vuex.Store({
     // 여기는 data값이 뭐가 들어올 지 모르기 때문에 내가 수정해줘야함.
     CREATE_RATE: function (state, data){
       state.user_rate.push(data)
+    },
+    CREATE_FAV_GENRE: function (state, data){
+      state.favoratieGenre = data
     }
   },
   actions: {
@@ -104,6 +108,9 @@ export default new Vuex.Store({
           console.log(err)
         })
     },
+    createFavGenre: function ( { commit }, data) {
+      commit('CREATE_FAV_GENRE', data)
+    }
   },
   // getters: {
   //   isModal: function (state) {

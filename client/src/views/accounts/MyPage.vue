@@ -161,7 +161,8 @@ export default {
             }
           }
           this.defaultWords = this.defaultWords.filter(defaultWord => defaultWord.value > 0)
-          console.log(this.defaultWords)
+            this.defaultWords.sort()
+            this.$store.dispatch('createFavGenre', this.defaultWords.slice(0,3))
         })
         .catch(err => {
           console.log(err)
