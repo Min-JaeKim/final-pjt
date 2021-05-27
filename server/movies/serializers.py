@@ -20,14 +20,14 @@ class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Comment
-        fields = ('id', 'content', 'username',)
+        fields = ('id', 'content', 'username', 'user_id')
 
 
 class ReplySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Reply
-        fields = ('id', 'content',)
+        fields = ('id', 'content', 'user_id')
 
 
 class RatingSerializer(serializers.ModelSerializer):
