@@ -5,7 +5,7 @@
         :src="`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`" 
         :alt="`${movie.title}`"
       >
-      <b-button v-if="isViewed" v-b-toggle.my-collapse @click="onClick">Toggle Collapse</b-button>
+      <b-button v-if="isViewed" v-b-toggle.my-collapse @click="onClick" class="toggle">Detail</b-button>
       <!-- <Content v-if="isClicked"/> -->
     </div>
   </div>
@@ -81,6 +81,7 @@ export default {
   #temp {
     position: relative;
     top: 18%;
+    background-color: white;
   }
   #temp:hover {
     top: 0%;

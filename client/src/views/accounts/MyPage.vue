@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1 class="title">MyPage</h1>
     <div id="app">
         <h1>선호하는 영화 장르</h1>
         <wordcloud
@@ -172,4 +171,8 @@ export default {
 </script>
 
 <style>
+#app {
+  font-family: SEBANG_Gothic_Bold;
+  color: white;
+}
 </style>

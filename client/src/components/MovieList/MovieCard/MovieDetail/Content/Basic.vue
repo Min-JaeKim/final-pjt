@@ -76,6 +76,7 @@ export default {
     right: 50%;
     width: 50%;
     height: 720px;
+    color: white
   }
   .right {
     position: absolute;
