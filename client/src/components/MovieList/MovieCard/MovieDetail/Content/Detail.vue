@@ -8,7 +8,7 @@
       <br>
       <h1>Review</h1>
       <br>
-      <input type="text" v-model="reviewContent" @keyup.enter="createReview">
+      <input type="text" v-model.trim="reviewContent" @keyup.enter="createReview">
       <button @click="createReview">리뷰작성</button>
     </div>
     <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w500/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
@@ -69,6 +69,7 @@ export default {
       })
         .then(res => {
           console.log(res)
+          this.reviewContent = null
           this.reviews = this.getReviews()
         })
         .catch(err => {

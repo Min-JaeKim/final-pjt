@@ -8,7 +8,7 @@
       </div>
     </div>
     <div v-if="change">
-      <input type="text" @keyup.enter="updateReply(reply)" v-model="content">
+      <input type="text" @keyup.enter="updateReply(reply)" v-model.trim="content">
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
   data: function () {
     return {
       change: false,
-      content: '',
+      content: this.reply.content,
     }
   },
   methods: {
