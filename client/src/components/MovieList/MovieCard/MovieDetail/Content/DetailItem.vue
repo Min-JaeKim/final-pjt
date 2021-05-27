@@ -1,10 +1,9 @@
 <template>
-  <li @click="selectReview">
+  <div @click="selectReview">
     <span>{{ review.content }}</span>
-    <!-- <span>{{ review.created_at }}</span> -->
     <button @click="updateReview">update</button>
     <button @click="deleteReview">X</button>
-  </li>
+  </div>
 </template>
 
 <script>
