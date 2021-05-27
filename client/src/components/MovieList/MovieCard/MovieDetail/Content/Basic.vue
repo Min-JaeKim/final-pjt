@@ -45,7 +45,6 @@ export default {
         const value = {
           rate: this.value
         }
-        console.log(value)
         axios({
           method: 'post',
           url: `http://127.0.0.1:8000/movies/${this.movie.movie_id}/rating/`,

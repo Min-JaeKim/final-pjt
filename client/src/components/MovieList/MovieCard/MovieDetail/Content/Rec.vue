@@ -6,7 +6,7 @@
       <br>
       <br>
       <br>
-      <h1>이런 영화는 어때요?</h1>
+      <h1 class="title">이런 영화는 어때요?</h1>
     </div>
     <div class="right" :style="`background: linear-gradient(215deg, transparent 10%, black), url('https://image.tmdb.org/t/p/w200/${movie.backdrop_path}'); background-size: 100% auto !important; opacity:0.3;`">
     </div>
@@ -55,6 +55,9 @@ export default {
 </script>
 
 <style scoped>
+  .title {
+    color: white;
+  }
   .left {
     position: absolute;
     display: inline-block;

@@ -2,7 +2,7 @@
   <div id="item">
     <br>
     <br>
-    <h3>{{item.title}}</h3>
+    <h3 class="title">{{item.title}}</h3>
     <img :src="`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`" :alt="item.title" style="object-fit: cover">
     <!-- <iframe src="" frameborder="0"></iframe> -->
   </div>
@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style scoped>
+  .title {
+    color: white;
+  }
   #item {
     position: relative;
     width: 33.3%;

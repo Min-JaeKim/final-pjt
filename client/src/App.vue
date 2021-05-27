@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar id="nav" toggleable="lg">
-      <b-navbar-brand href="#">잼민</b-navbar-brand>
+      <b-navbar-brand href="#">JM</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>

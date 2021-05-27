@@ -11,9 +11,6 @@
         :wordClick="wordClickHandler">
         </wordcloud>
     </div>
-    <div>
-
-    </div>
   </div>
 </template>
 
@@ -167,6 +164,7 @@ export default {
         .catch(err => {
           console.log(err)
         })
+
   }
 }
 </script>
