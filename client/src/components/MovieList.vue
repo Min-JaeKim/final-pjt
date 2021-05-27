@@ -60,6 +60,10 @@ export default {
 </script>
 
 <style scoped>
+  #title {
+    font-family: SEBANG_Gothic_Bold;
+    color: white;
+  }
   #carousel {
     width: 100%;
     height: 12.5%;
@@ -71,10 +75,12 @@ export default {
   #carousel-list {
     width: 100%;
     height: 75%;
+    
   }
   #blank {
     width: 100%;
     height: 10%;
+    
   }
   #content {
     height: 800px;

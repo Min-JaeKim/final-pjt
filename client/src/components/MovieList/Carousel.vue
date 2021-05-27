@@ -3,7 +3,7 @@
     ref="myCarousel"
     id="carousel-1"
     :interval="1000000"
-    background="#ababab"
+    background="#000000"
     style="text-shadow: 1px 1px 2px #333;"
   >
 
@@ -69,6 +69,7 @@ export default {
     height: 100%;
   }
   .carousel-caption {
+    background: black;
     position: relative !important;
     width: 100% !important;
     height: 100% !important;
