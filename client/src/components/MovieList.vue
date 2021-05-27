@@ -1,6 +1,8 @@
 <template>
   <div id="carousel">
-    <h4 id="title">{{ movieList[0].description }}</h4>
+    <div style="width: 40%">
+      <h4 id="title">{{ movieList[0].description }}</h4>
+    </div>
     <Carousel :carousel="carousel" id="carousel-list" :listId="listId" style="position: relative;"/>
 
     <!-- <MovieCard 

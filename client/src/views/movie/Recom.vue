@@ -1,16 +1,18 @@
 <template>
-  <div>
+<div class="p-5">
     <h2 class="title"><span class="username">“{{ this.$store.state.username }}”</span>님을 위한 랜덤 추천작</h2>
     <br><br>
       <button v-if="select.length" @click="randomMovie">Pick!</button>
     <span v-else>찜한 영화가 없습니다.</span>
-      <div v-if="clicked">
-        <br>
-        <h2><p>추천 영화 : {{ recMovie.title }}</p></h2>
-        <img :src="`https://image.tmdb.org/t/p/w1280/${recMovie.backdrop_path}`" :alt="recMovie.title" style="object-fit: cover">
-        <br><br>
-        <p class="overview">줄거리 : {{ recMovie.overview }}</p>
-      </div>
+    <div v-if="clicked">
+      <br>
+      <h2><p>추천 영화 : {{ recMovie.title }}</p></h2>
+      <img :src="`https://image.tmdb.org/t/p/w1280/${recMovie.backdrop_path}`" :alt="recMovie.title" style="object-fit: cover">
+      <br><br><br><br>
+      <h2 class="overview">줄거리</h2>
+      <br><br>
+      <p class="overview">{{ recMovie.overview }}</p>
+    </div>
   </div>
 </template>
 
