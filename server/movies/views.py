@@ -115,7 +115,7 @@ def review_update_delete(request, comment_pk):
 
 
 @api_view(['GET'])
-def reply_list(request, movie_id, comment_pk):
+def reply_list(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     serializers = ReplySerializer(comment.reply_set, many=True)
     return Response(serializers.data, status=status.HTTP_200_OK)
@@ -124,7 +124,7 @@ def reply_list(request, movie_id, comment_pk):
 @api_view(['POST'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def reply_create(request, movie_id, comment_pk):
+def reply_create(request, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     serializer = ReplySerializer(data=request.data)
     if serializer.is_valid(raise_exception=True):
@@ -136,12 +136,12 @@ def reply_create(request, movie_id, comment_pk):
 @api_view(['PUT', 'DELETE'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def reply_update_delete(request, movie_id, comment_pk, reply_pk):
+def reply_update_delete(request, reply_pk):
     reply = get_object_or_404(Reply, pk=reply_pk)
     if not request.user.reply_set.filter(pk=reply_pk).exists():
         return Response({ 'detail' : '권한이 없습니다'}, status=status.HTTP_403_FORBIDDEN)
     if request.method == 'PUT':
-        serializer = ReplySerializer(Reply, data=request.data)
+        serializer = ReplySerializer(reply, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)

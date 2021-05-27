@@ -49,10 +49,10 @@ export default {
         method: 'get',
         url: `http://127.0.0.1:8000/movies/${this.movieId}/review_list/`,
       })
-        .then((res) => {
+        .then(res => {
           this.reviews = res.data
         })
-        .catch((err) => {
+        .catch(err => {
           console.log(err)
         })
     },
