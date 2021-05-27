@@ -27,7 +27,7 @@ class ReplySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Reply
-        fields = ('content',)
+        fields = ('id', 'content',)
 
 
 class RatingSerializer(serializers.ModelSerializer):

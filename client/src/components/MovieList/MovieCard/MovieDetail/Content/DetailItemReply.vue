@@ -1,88 +1,72 @@
 <template>
   <div>
-    <input type="text" v-model.trim="content" @keyup.enter="createReply">
-    <button @click="createReply">댓글 쓰기</button>
-    <br>
-    <!-- <li v-for="(reply, idx) in replys" :key="idx">
-        <p>{{ reply.content }}</p>
-        <p>{{ reply.created_at }}</p>
-        <button @click="updateReply">update</button>
-        <button @click="deleteTodo">X</button>
-      </li> -->
+    <div class="d-flex justify-content-between">
+      <p>{{ reply.content }}</p>
+      <div>
+        <button @click="doChange">수정</button>
+        <button @click="deleteReply(reply)">삭제</button>
+      </div>
+    </div>
+    <div v-if="change">
+      <input type="text" @keyup.enter="updateReply(reply)" v-model="content">
+    </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+
 export default {
-  name: "Review",
+  name: "DetailItemReply",
   props: {
-    // 이거 꼭 detail에서 props 시켜 주나 확인할 것.
-    movieId: {
-      type: Number
-    },
-    reviewId: {
-      type: Number
+    reply: {
+      type: Object
     }
   },
   data: function () {
     return {
-      setToken: this.$store.state.setToken(),
-      replys: [],
-      content: null,
+      change: false,
+      content: '',
     }
   },
   methods: {
-    getReplys: function () {
+    doChange: function () {
+      this.change = !this.change
+    },
+    updateReply: function (reply) {
+      const updated = {
+        ...reply,
+        content: this.content
+      }
+      console.log(reply)
+      console.log(updated)
       axios({
-        method: 'get',
-        url: `http://127.0.0.1:8000/movies/${this.movieId}/review/${this.reviewId}/`,
+        method: 'put',
+        url: `http://127.0.0.1:8000/movies/replies/${reply.id}/`,
+        data: updated,
+        headers: this.$store.state.setToken()
       })
         .then((res) => {
           console.log(res)
-          this.replys = res.data
+          this.$emit('reply-change')
         })
         .catch((err) => {
           console.log(err)
         })
     },
-    // deleteReview: function () {
-    //   axios({
-    //     method: 'delete',
-    //     url: `http://127.0.0.1:8000/movies/${this.movieId}/review/${this.reviewId}/`,
-    //     headers: this.setToken(),
-    //   })
-    //     .then((res) => {
-    //       console.log(res)
-    //       this.getTodos()
-    //     })
-    //     .catch((err) => {
-    //       console.log(err)
-    //     })
-    // },
-    // updateReview: function (todo) {
-    //   const todoItem = {
-    //     ...todo,
-    //     completed: !todo.completed
-    //   }
-
-    //   axios({
-    //     method: 'put',
-    //     url: `http://127.0.0.1:8000/todos/${todo.id}/`,
-    //     data: todoItem,
-    //     headers: this.setToken()
-    //   })
-    //     .then((res) => {
-    //       console.log(res)
-    //       todo.completed = !todo.completed
-    //     })
-    //   },
-  },
-  created: function () {
-    if (localStorage.getItem('jwt')) {
-      this.getReplys()
-    } else {
-      this.$router.push({ name: 'Login' })
+    deleteReply: function (reply) {
+      axios({
+        method: 'delete',
+        url: `http://127.0.0.1:8000/movies/replies/${reply.id}/`,
+        headers: this.$store.state.setToken()
+      })
+        .then((res) => {
+          console.log(res)
+          this.$emit('reply-change')
+        })
+        .catch((err) => {
+          console.log(err)
+        })
     }
   }
 }

@@ -15,11 +15,17 @@
       <b-button v-b-toggle.sidebar-variant>댓글보기</b-button>
       <b-sidebar id="sidebar-variant" title="댓글" bg-variant="dark" text-variant="light" shadow>
         <div class="px-3 py-2">
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-          <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+          <input type="text" v-model="replyContent" @keyup.enter="createReply">
+          <button @click="createReply">댓글작성</button>
+          <hr>
+          <br>
+          <DetailItemReply
+            v-for="(reply, idx) in replies"
+            :key="idx"
+            :reply="reply"
+            @reply-change="replyChange"
+          />
+          <b-img :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie.poster_path}`" fluid thumbnail></b-img>
         </div>
       </b-sidebar>
     </div>
@@ -28,6 +34,7 @@
 
 <script>
 import axios from 'axios'
+import DetailItemReply from '@/components/MovieList/MovieCard/MovieDetail/Content/DetailItemReply' 
 
 export default {
   name: 'DetailItem',
@@ -36,13 +43,48 @@ export default {
       type: Object,
     }
   },
+  components: {
+    DetailItemReply,
+  },
   data: function () {
     return {
       change: false,
-      content: ''
+      content: '',
+      replies: [],
+      replyContent: null,
     }
   },
   methods: {
+    getReplies: function () {
+      axios({
+        method: 'get',
+        url: `http://127.0.0.1:8000/movies/reviews/${this.review.id}/reply_list/`,
+      })
+        .then(res => {
+          this.replies = res.data
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    },
+    createReply: function () {
+      const createReply = {
+          content: this.replyContent
+        }
+      axios({
+        method: 'post',
+        url: `http://127.0.0.1:8000/movies/reviews/${this.review.id}/reply_create/`,
+        data: createReply,
+        headers: this.$store.state.setToken()
+      })
+        .then(res => {
+          console.log(res)
+          this.replies = this.getReplies()
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    },
     doChange: function () {
       this.change = !this.change
       console.log(this.change)
@@ -79,7 +121,13 @@ export default {
         .catch((err) => {
           console.log(err)
         })
+    },
+    replyChange: function () {
+      this.replies = this.getReplies()
     }
+  },
+  created: function () {
+    this.getReplies()
   }
 }
 </script>
